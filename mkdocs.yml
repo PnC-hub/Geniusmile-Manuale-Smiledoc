@@ -1,0 +1,64 @@
+site_name: Manuale Smiledoc
+site_url: https://manuale-smiledoc.geniusmile.com
+site_description: Manuale operativo per la gestione dello Studio Dentistico Smiledoc
+
+theme:
+  name: material
+  language: it
+  palette:
+    - scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Modalità scura
+    - scheme: slate
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Modalità chiara
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    logo: material/tooth
+  favicon: assets/favicon.png
+
+plugins:
+  - search:
+      lang: it
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Protocolli:
+    - Introduzione: protocolli/index.md
+  - Procedure:
+    - Introduzione: procedure/index.md
+  - Moduli:
+    - Introduzione: moduli/index.md
+  - Formazione:
+    - Introduzione: formazione/index.md
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://smiledoc.it
+  generator: false
+
+copyright: "&copy; 2026 Smiledoc S.r.l. - Tutti i diritti riservati"

@@ -1,0 +1,48 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+      
+      - name: Build site
+        run: mkdocs build
+      
+      - name: Deploy to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 93.186.255.213
+          username: geniusfast
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "site/*"
+          target: "/tmp/manuale-smiledoc"
+          strip_components: 1
+      
+      - name: Move to web directory
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 93.186.255.213
+          username: geniusfast
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo rm -rf /var/www/vhosts/geniusmile.com/manuale-smiledoc/*
+            sudo mv /tmp/manuale-smiledoc/* /var/www/vhosts/geniusmile.com/manuale-smiledoc/
+            sudo chown -R geniusmile:psacln /var/www/vhosts/geniusmile.com/manuale-smiledoc/
