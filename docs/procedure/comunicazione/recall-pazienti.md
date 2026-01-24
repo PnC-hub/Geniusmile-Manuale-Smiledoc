@@ -1,102 +1,166 @@
 # Recall Pazienti
 
 ## Obiettivo
-Garantire la continuità delle cure richiamando sistematicamente i pazienti per controlli periodici e igiene professionale.
 
-## Importanza del Recall
+Garantire la continuità delle cure richiamando sistematicamente i pazienti per controlli periodici, igiene professionale e completamento dei piani di trattamento.
 
-### Benefici per il Paziente
+!!! info "Importanza del Recall"
+    Il sistema di recall è fondamentale per:
 
-- Prevenzione patologie
-- Diagnosi precoce
-- Mantenimento salute orale
-- Risparmio economico (prevenzione vs cura)
-
-### Benefici per lo Studio
-
-- Fidelizzazione pazienti
-- Occupazione agenda costante
-- Revenue ricorrente
-- Migliori outcome clinici
+    - **Salute del paziente:** prevenzione e diagnosi precoce
+    - **Relazione:** mantenere il contatto con i pazienti
+    - **Studio:** garantire flusso costante di appuntamenti
 
 ## Tipologie di Recall
 
-| Tipo | Frequenza Standard | Target |
-|------|-------------------|--------|
-| Igiene | 6 mesi | Tutti i pazienti |
-| Controllo | 6-12 mesi | Tutti i pazienti |
-| Parodontale | 3-4 mesi | Pazienti parodontali |
-| Ortodontico | Secondo piano | Pazienti orto |
-| Post-chirurgico | Variabile | Post interventi |
-| Implantare | 6 mesi | Portatori impianti |
+### Recall Clinici
 
-## Frequenze Personalizzate
+| Tipo | Frequenza Standard | Target | Priorità |
+|------|-------------------|--------|----------|
+| Igiene | 6 mesi | Tutti i pazienti | Alta |
+| Controllo | 6-12 mesi | Tutti i pazienti | Alta |
+| Parodontale | 3-4 mesi | Pazienti con parodontite | Molto Alta |
+| Implantare | 6 mesi | Portatori di impianti | Molto Alta |
+| Ortodontico | Secondo piano | Pazienti in trattamento | Media |
+| Post-chirurgico | 7-14 giorni | Post interventi | Alta |
 
-### Valutazione Rischio
+### Recall Commerciali
 
-| Rischio | Frequenza Igiene | Frequenza Controllo |
-|---------|------------------|---------------------|
-| Basso | 12 mesi | 12 mesi |
-| Medio | 6 mesi | 6 mesi |
-| Alto | 3-4 mesi | 6 mesi |
+| Tipo | Quando | Target |
+|------|--------|--------|
+| Preventivo in sospeso | 30 giorni da prima visita | Pazienti con preventivo non accettato |
+| Trattamento interrotto | 60 giorni | Pazienti che hanno sospeso le cure |
+| Paziente perso | 18+ mesi | Pazienti senza appuntamenti recenti |
 
-### Fattori di Rischio
+## Protocollo di Recall in 5 Step
 
-**Alto rischio:**
+### Step 1: Primo Contatto - SMS Automatico
 
-- Parodontite attiva/trattata
-- Fumatori
-- Diabetici
-- Scarsa igiene domiciliare
-- Cariorecettività elevata
+**Quando:** Data recall raggiunta
 
-## Procedura di Recall
+**Messaggio tipo Igiene:**
+```
+Studio Smiledoc: Gentile [Nome], sono passati 6 mesi
+dalla sua ultima igiene professionale. La prevenzione
+è importante! Prenoti al 06 90623936 o risponda OK
+per essere richiamato.
+```
 
-### Impostazione nel Gestionale
+**Messaggio tipo Controllo:**
+```
+Studio Smiledoc: Gentile [Nome], è tempo del suo
+controllo periodico. Prenoti al 06 90623936.
+La aspettiamo!
+```
 
-Per ogni paziente definire:
+### Step 2: Secondo Contatto - SMS di Sollecito
 
-| Campo | Valore |
+**Quando:** 7 giorni dopo il primo SMS senza risposta
+
+```
+Studio Smiledoc: Gentile [Nome], non abbiamo ancora
+ricevuto sua risposta per l'appuntamento di controllo.
+La richiamiamo nei prossimi giorni.
+Per prenotare: 06 90623936
+```
+
+### Step 3: Terzo Contatto - Telefonata
+
+**Quando:** 7 giorni dopo il secondo SMS
+
+**Script telefonico:**
+
+> "Buongiorno Sig./Sig.ra [Cognome], sono [Nome] dello Studio Dentistico Smiledoc. La chiamo perché sono passati [X] mesi dalla sua ultima [igiene/visita] e volevamo invitarla per un controllo. La prevenzione è molto importante per mantenere la salute della bocca. Ha disponibilità nelle prossime settimane?"
+
+**Se risponde:**
+- Proporre 2-3 date/orari
+- Fissare appuntamento
+- Confermare via SMS
+
+**Se non risponde:**
+- Lasciare messaggio in segreteria
+- Riprovare in orario diverso
+
+### Step 4: Quarto Contatto - Ultima Telefonata
+
+**Quando:** 7 giorni dopo la prima telefonata senza risposta
+
+**Script:**
+
+> "Buongiorno, sono ancora [Nome] dello Studio Smiledoc. Abbiamo provato a contattarla nei giorni scorsi per invitarla a un controllo. Ci farebbe piacere rivederla. Quando ha un momento ci richiami al 06 90623936. Grazie!"
+
+### Step 5: Chiusura Ciclo
+
+**Quando:** 7 giorni dopo l'ultimo tentativo
+
+**Azioni:**
+
+| Esito | Azione |
 |-------|--------|
-| Tipo recall | Igiene/Controllo/Altro |
-| Frequenza | Mesi |
-| Data prossimo | Automatica |
-| Canale preferito | SMS/Tel/Email |
-| Note | Particolarità |
+| Appuntamento fissato | Aggiornare prossimo recall |
+| Paziente rimanda | Annotare e riprogrammare recall tra 30 giorni |
+| Paziente rifiuta | Annotare motivo, recall tra 6 mesi |
+| Non raggiungibile | Segnare come "non raggiunto", riprovare tra 60 giorni |
 
-### Flusso di Comunicazione
+## Schema del Flusso
 
 ```
 DATA RECALL RAGGIUNTA
          │
          ▼
-    PRIMO CONTATTO
-    (SMS automatico)
+    STEP 1: SMS
+    (automatico)
          │
     ┌────┴────┐
 Risponde     Non risponde
     │              │
     ▼              ▼
-Prenota      SECONDO CONTATTO
+PRENOTA     STEP 2: SMS SOLLECITO
              (7 giorni dopo)
                    │
               ┌────┴────┐
          Risponde     Non risponde
               │              │
               ▼              ▼
-          Prenota      TERZO CONTATTO
-                       (Telefonata)
+          PRENOTA     STEP 3: TELEFONATA
+                       (7 giorni dopo)
                             │
                        ┌────┴────┐
                   Risponde     Non risponde
                        │              │
                        ▼              ▼
-                   Prenota      Segnare come
-                               "Non raggiunto"
-                               Riprovare tra 30gg
+                   PRENOTA     STEP 4: ULTIMA CHIAMATA
+                               (7 giorni dopo)
+                                    │
+                               ┌────┴────┐
+                          Risponde     Non risponde
+                               │              │
+                               ▼              ▼
+                           PRENOTA     STEP 5: CHIUSURA
+                                       (segnare esito)
 ```
 
-## Messaggi di Recall
+## Frequenze Personalizzate
+
+### Valutazione del Rischio
+
+| Livello Rischio | Frequenza Igiene | Frequenza Controllo | Criteri |
+|-----------------|------------------|---------------------|---------|
+| Basso | 12 mesi | 12 mesi | Buona igiene, no patologie |
+| Medio | 6 mesi | 6 mesi | Igiene media, rischio carie |
+| Alto | 3-4 mesi | 6 mesi | Parodontite, fumatori, diabetici |
+
+### Fattori di Rischio Alto
+
+- Parodontite attiva o trattata
+- Fumatori
+- Diabetici
+- Scarsa igiene domiciliare
+- Elevata cariorecettività
+- Portatori di impianti
+- Pazienti oncologici
+
+## Messaggi per Ogni Tipologia
 
 ### SMS Recall Igiene
 
@@ -106,20 +170,39 @@ dalla sua ultima igiene. È tempo di un controllo!
 Prenoti al 06 90623936 o risponda a questo messaggio.
 ```
 
-### SMS Recall Controllo
+### SMS Recall Parodontale
 
 ```
-Studio Smiledoc: Gentile [Nome], è passato un anno
-dall'ultimo controllo. La prevenzione è importante!
-Ci chiami al 06 90623936 per un appuntamento.
+Studio Smiledoc: Gentile [Nome], è tempo del suo
+appuntamento di mantenimento parodontale.
+La regolarità è fondamentale per la salute delle
+sue gengive. Prenoti al 06 90623936.
 ```
 
-### Email Recall
+### SMS Recall Implantare
+
+```
+Studio Smiledoc: Gentile [Nome], è passato tempo
+dall'ultimo controllo dei suoi impianti.
+La manutenzione regolare è importante!
+Prenoti al 06 90623936.
+```
+
+### SMS Preventivo in Sospeso
+
+```
+Studio Smiledoc: Gentile [Nome], abbiamo notato
+che il piano di trattamento discusso non è stato
+ancora avviato. Restiamo a disposizione per
+chiarimenti. Ci chiami al 06 90623936.
+```
+
+### Email Recall Completa
 
 ```
 Oggetto: È tempo del suo controllo periodico
 
-Gentile [Nome],
+Gentile [Nome] [Cognome],
 
 sono trascorsi [X] mesi dalla sua ultima visita presso
 il nostro studio.
@@ -129,96 +212,147 @@ periodico permette di individuare eventuali problemi
 prima che diventino più seri e costosi da trattare.
 
 La invitiamo a contattarci per fissare un appuntamento:
+
 📞 06 90623936
 📧 info@smiledoc.it
 
+Orari segreteria:
+Lun-Ven: 09:00-13:00 / 14:30-19:30
+
 La aspettiamo!
 
-Cordiali saluti
+Cordiali saluti,
 Studio Dentistico Smiledoc
+Via Monte Circeo 12, Monterotondo
 ```
 
-### Script Telefonico
-
-> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello Studio Smiledoc. La chiamo perché sono passati [X] mesi dalla sua ultima [igiene/visita] e volevamo invitarla a programmare un controllo. Ha disponibilità nelle prossime settimane?"
-
-## Gestione Risposte
+## Gestione delle Risposte
 
 ### Paziente Prenota
 
-1. Fissare appuntamento
-2. Aggiornare data prossimo recall
-3. Inviare conferma
+1. ✅ Fissare appuntamento in agenda
+2. ✅ Aggiornare data prossimo recall
+3. ✅ Inviare conferma appuntamento
+4. ✅ Annotare in cartella
 
-### Paziente Rifiuta/Rimanda
+### Paziente Rimanda
 
-1. Chiedere (senza insistere) il motivo
+1. Chiedere gentilmente il motivo (senza insistere)
 2. Proporre periodo alternativo
-3. Annotare in cartella
-4. Impostare nuovo recall futuro
+3. Annotare in cartella il motivo
+4. Impostare nuovo recall tra 30 giorni
+
+**Script:**
+> "Capisco perfettamente. Quando pensa di poter trovare un momento? Posso ricontattarla tra qualche settimana?"
+
+### Paziente Rifiuta
+
+1. Accogliere il rifiuto con rispetto
+2. Sottolineare brevemente l'importanza della prevenzione
+3. Lasciare la porta aperta
+4. Annotare in cartella
+5. Recall tra 6 mesi
+
+**Script:**
+> "Comprendo. Le ricordo solo che la prevenzione è importante per evitare problemi più seri. Restiamo comunque a disposizione quando vorrà. La ricontatteremo tra qualche mese."
 
 ### Paziente Irraggiungibile
 
-1. Documentare i tentativi
-2. Segnare come "non raggiunto"
-3. Riprovare dopo 30 giorni
-4. Dopo 3 cicli: valutare se continuare
+1. Documentare tutti i tentativi effettuati
+2. Verificare correttezza numero telefono
+3. Provare canali alternativi (email)
+4. Segnare come "non raggiunto"
+5. Riprovare dopo 60 giorni
+6. Dopo 3 cicli falliti: valutare se continuare
 
-## Monitoraggio
+## Recupero Pazienti Persi
 
-### KPI Recall
+### Definizione
 
-| Indicatore | Formula | Obiettivo |
-|------------|---------|-----------|
-| Tasso invio | Recall inviati / Recall programmati | 100% |
-| Tasso risposta | Risposte / Recall inviati | > 40% |
-| Tasso prenotazione | Prenotati / Recall inviati | > 30% |
-| Tasso presentazione | Presentati / Prenotati | > 90% |
+Pazienti senza appuntamenti da oltre **18 mesi**.
 
-### Report Mensile
+### Procedura di Recupero
 
-```
-REPORT RECALL - Mese: __________
-
-Recall programmati: ____
-Recall inviati: ____ (___%)
-Risposte ricevute: ____ (___%)
-Appuntamenti fissati: ____ (___%)
-Presentati: ____ (___%)
-
-Pazienti non raggiunti: ____
-Pazienti che hanno rifiutato: ____
-
-Azioni necessarie:
-________________________________
-```
-
-## Pazienti "Persi"
-
-### Identificazione
-
-Pazienti senza appuntamenti da oltre 18 mesi.
-
-### Recupero
-
-1. Campagna dedicata
-2. Messaggio personalizzato
-3. Eventuale incentivo (visita gratuita)
-4. Follow-up telefonico
+1. **Identificazione** - Estrarre lista dal gestionale
+2. **Segmentazione** - Dividere per valore/potenziale
+3. **Campagna dedicata** - Messaggio personalizzato
+4. **Eventuale incentivo** - Visita di controllo gratuita
+5. **Follow-up telefonico** - Per chi non risponde
 
 ### Messaggio Recupero
 
 ```
-Studio Smiledoc: Gentile [Nome], non la vediamo da tempo!
-La invitiamo per una visita di controllo gratuita.
+Studio Smiledoc: Gentile [Nome], è passato molto tempo
+dalla sua ultima visita e ci farebbe piacere rivederla.
+Le offriamo una visita di controllo gratuita.
 Prenoti al 06 90623936. La aspettiamo!
 ```
+
+### Script Telefonico Recupero
+
+> "Buongiorno Sig./Sig.ra [Cognome], sono [Nome] dello Studio Smiledoc. È passato un po' di tempo dalla sua ultima visita e volevamo sapere come sta. Ci farebbe molto piacere rivederla, anche solo per un controllo. In questo periodo offriamo la visita di controllo gratuita per i nostri pazienti storici. Posso proporle un appuntamento?"
+
+## Monitoraggio e KPI
+
+### Indicatori di Performance
+
+| KPI | Formula | Obiettivo |
+|-----|---------|-----------|
+| Tasso di invio | Recall inviati / Recall programmati | 100% |
+| Tasso di risposta | Risposte / Recall inviati | > 40% |
+| Tasso di prenotazione | Prenotati / Recall inviati | > 30% |
+| Tasso di presentazione | Presentati / Prenotati | > 90% |
+| Pazienti recuperati | Recuperati / Persi contattati | > 15% |
+
+### Report Mensile Recall
+
+```
+╔══════════════════════════════════════════════════╗
+║        REPORT RECALL - Mese: __________          ║
+╠══════════════════════════════════════════════════╣
+║ Recall programmati:          ____ (100%)         ║
+║ Recall inviati:              ____ (___%)         ║
+║ Risposte ricevute:           ____ (___%)         ║
+║ Appuntamenti fissati:        ____ (___%)         ║
+║ Pazienti presentati:         ____ (___%)         ║
+╠══════════════════════════════════════════════════╣
+║ Pazienti non raggiunti:      ____                ║
+║ Pazienti che hanno rifiutato: ____               ║
+║ Pazienti recuperati:         ____                ║
+╠══════════════════════════════════════════════════╣
+║ NOTE E AZIONI:                                   ║
+║ ____________________________________________     ║
+║ ____________________________________________     ║
+╚══════════════════════════════════════════════════╝
+```
+
+## Impostazione nel Gestionale
+
+### Per Ogni Paziente
+
+| Campo | Valore | Note |
+|-------|--------|------|
+| Tipo recall | Igiene/Controllo/Parodontale/Implantare | Può averne multipli |
+| Frequenza | Mesi (3/4/6/12) | Secondo rischio |
+| Data prossimo | Calcolata automaticamente | Dall'ultima prestazione |
+| Canale preferito | SMS/Tel/Email/WhatsApp | Chiedere al paziente |
+| Note | Particolarità | Orari preferiti, etc. |
 
 ## Responsabilità
 
 | Ruolo | Compito |
 |-------|---------|
-| Sistema | Invio automatico SMS/Email |
-| Segreteria | Telefonate, gestione risposte |
-| Coordinatore | Monitoraggio KPI, azioni correttive |
-| Operatore | Impostazione frequenza recall in cartella |
+| Sistema/Gestionale | Generazione automatica recall, invio SMS |
+| Segreteria | Telefonate, gestione risposte, prenotazioni |
+| Coordinatore | Monitoraggio KPI, azioni correttive, report |
+| Operatore clinico | Impostare frequenza recall in cartella, comunicare al paziente |
+
+## Calendario Attività
+
+| Attività | Frequenza | Responsabile |
+|----------|-----------|--------------|
+| Verifica recall da inviare | Giornaliera | Segreteria |
+| Telefonate follow-up | Giornaliera | Segreteria |
+| Analisi KPI recall | Settimanale | Coordinatore |
+| Report mensile | Mensile | Coordinatore |
+| Campagna recupero persi | Trimestrale | Marketing/Segreteria |

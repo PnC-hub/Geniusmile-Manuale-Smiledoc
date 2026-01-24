@@ -1,188 +1,337 @@
 # Prima Visita
 
 ## Obiettivo
-Garantire un'accoglienza eccellente al nuovo paziente, raccogliendo tutte le informazioni necessarie e creando le basi per un rapporto di fiducia duraturo.
+
+Garantire un'accoglienza eccellente al nuovo paziente, raccogliendo tutte le informazioni necessarie e creando le basi per un rapporto di fiducia duraturo. La prima visita è il momento più importante per l'acquisizione e la fidelizzazione del paziente.
+
+!!! info "Importanza della Prima Visita"
+    La prima visita determina:
+
+    - La percezione della qualità dello studio
+    - La fiducia nel team medico
+    - La decisione di iniziare il trattamento
+    - Il passaparola futuro
+
+## Percorso del Paziente (Customer Journey)
+
+```
+CONTATTO       ARRIVO         VISITA         PREVENTIVO      CONGEDO
+TELEFONICO  →  IN STUDIO  →   CLINICA    →   E PIANO     →   E FOLLOW-UP
+    │              │             │              │               │
+    ▼              ▼             ▼              ▼               ▼
+ Raccolta     Accoglienza   Diagnosi      Presentazione   Fissare
+ dati e       documenti     completa      trattamento     prossimo
+ conferma     anamnesi      esami                         appuntamento
+```
 
 ## Prima dell'Arrivo
 
-### Conferma Appuntamento
+### Conferma Appuntamento (24-48h prima)
 
-- [ ] Confermare appuntamento 24h prima (SMS/chiamata)
+- [ ] Inviare SMS/chiamata di conferma
 - [ ] Verificare completezza dati anagrafici
-- [ ] Preparare documentazione da compilare
-- [ ] Verificare disponibilità tempo adeguato (minimo 45 min)
+- [ ] Ricordare documenti da portare (tessera sanitaria, referti precedenti)
+- [ ] Confermare durata prevista (45-60 minuti)
+
+**SMS di Conferma:**
+```
+Studio Smiledoc: Gentile [Nome], le confermiamo l'appuntamento
+per la prima visita domani [data] alle [ora].
+Si ricordi di portare tessera sanitaria e eventuali referti.
+Via Monte Circeo 12, Monterotondo. Info: 06 90623936
+```
 
 ### Preparazione Documentazione
 
-Preparare in anticipo:
+Preparare in cartellina dedicata:
 
-- Scheda anagrafica
-- Questionario anamnestico
-- Informativa privacy (GDPR)
-- Consenso trattamento dati
-- Consenso marketing (opzionale)
+| Documento | Copie | Note |
+|-----------|-------|------|
+| Scheda anagrafica | 1 | Da compilare |
+| Questionario anamnestico | 1 | Completo di tutte le patologie |
+| Informativa privacy (GDPR) | 2 | Una per il paziente |
+| Consenso trattamento dati | 1 | Obbligatorio |
+| Consenso marketing | 1 | Opzionale |
+| Brochure studio | 1 | Presentazione servizi |
+
+### Preparazione Postazione
+
+- [ ] Riunito pronto e igienizzato
+- [ ] Kit visita preparato (specchietto, sonda, pinzetta)
+- [ ] Radiografico disponibile (se necessario)
+- [ ] Fotocamera carica (documentazione fotografica)
 
 ## Arrivo del Paziente
 
 ### Accoglienza in Reception
 
 !!! tip "Prima Impressione"
-    I primi 30 secondi determinano la percezione che il paziente avrà dello studio.
+    I primi 30 secondi determinano la percezione che il paziente avrà dello studio. L'accoglienza deve essere impeccabile.
 
 **Script di accoglienza:**
 
-> "Buongiorno, benvenuto allo Studio Smiledoc. Sono [Nome], come posso aiutarla?"
+> "Buongiorno! Benvenuto allo Studio Dentistico Smiledoc. Sono [Nome]. Lei deve essere [Nome paziente], giusto? Si accomodi pure, siamo felici di averla qui."
 
-**Sequenza:**
+**Sequenza operativa:**
 
-1. Alzarsi per accogliere
-2. Contatto visivo e sorriso
-3. Confermare identità e appuntamento
-4. Offrire posto a sedere
+1. **Alzarsi** per accogliere (mai restare seduti)
+2. **Contatto visivo** e sorriso genuino
+3. **Confermare** identità e appuntamento
+4. **Accompagnare** al posto designato
+5. **Offrire** bevanda (acqua, caffè)
 
 ### Compilazione Documenti
 
-**Presentare i documenti:**
+**Introduzione documenti:**
 
-> "Prima della visita, le chiedo di compilare alcuni documenti. Si tratta del questionario sulla sua salute e dell'informativa sulla privacy. Se ha dubbi, sono a disposizione."
+> "Prima della visita, le chiedo di compilare alcuni documenti importanti. Si tratta del questionario sulla sua salute generale, che serve al dottore per conoscerla meglio, e dell'informativa sulla privacy. Prenda pure il tempo necessario, se ha dubbi sono qui per aiutarla."
 
-| Documento | Note |
-|-----------|------|
-| Anamnesi | Verificare completezza, chiarire dubbi |
-| Privacy | Spiegare brevemente, far firmare |
-| Consenso marketing | Opzionale, non insistere |
+| Documento | Cosa Verificare |
+|-----------|-----------------|
+| Anamnesi | Completezza, allergie, farmaci in uso, patologie |
+| Privacy | Firma presente, data corretta |
+| Consenso marketing | Non insistere se rifiuta |
 
 **Tempo stimato compilazione:** 10-15 minuti
 
-### Inserimento Dati
+### Verifica Anamnesi
 
-Mentre il paziente compila:
+!!! warning "Controllo Obbligatorio"
+    Prima di passare il paziente all'operatore, verificare SEMPRE:
 
-- [ ] Creare cartella clinica nel gestionale
-- [ ] Inserire dati anagrafici
-- [ ] Verificare provenienza (come ci ha conosciuto)
-- [ ] Annotare eventuali richieste specifiche
+    - Allergie (lattice, farmaci, anestetici)
+    - Farmaci anticoagulanti in uso
+    - Patologie cardiache
+    - Gravidanza in corso
+
+Se presenti condizioni particolari → segnalare immediatamente all'operatore.
+
+### Inserimento Dati nel Gestionale
+
+Durante la compilazione:
+
+- [ ] Creare anagrafica paziente
+- [ ] Inserire dati anagrafici completi
+- [ ] Registrare provenienza ("Come ci ha conosciuto?")
+- [ ] Annotare motivo della visita
+- [ ] Segnalare eventuali urgenze cliniche
 
 ## Sala d'Attesa
 
 ### Accompagnamento
 
-> "Prego, si accomodi nella nostra sala d'attesa. Il dottore sarà da lei tra pochi minuti."
+> "Prego, si accomodi nella nostra sala d'attesa. Il Dott. [Nome] sarà da lei tra pochi minuti. Posso offrirle qualcosa da bere?"
 
-**Offrire:**
+**Elementi da comunicare:**
 
-- Acqua/caffè
-- Materiale informativo dello studio
-- Wi-Fi (fornire password)
+- Password Wi-Fi (se richiesta)
+- Posizione servizi igienici
+- Tempo di attesa stimato
 
 ### Gestione dell'Attesa
 
-- Informare se c'è ritardo
-- Attesa massima tollerata: 10 minuti
-- In caso di ritardo maggiore, scusarsi e offrire alternative
+| Situazione | Azione |
+|------------|--------|
+| Attesa < 5 min | Nessun intervento |
+| Attesa 5-10 min | Informare paziente |
+| Attesa > 10 min | Scusarsi, offrire bevanda, aggiornare |
+| Attesa > 15 min | Scusarsi formalmente, proporre riprogrammazione |
 
 ## Accompagnamento alla Poltrona
 
 ### Procedura
 
-1. Chiamare il paziente per nome
-2. Accompagnare personalmente (non indicare la strada)
-3. Presentare l'operatore e l'assistente
-4. Far accomodare sulla poltrona
-5. Verificare il comfort
+1. **Chiamare** il paziente per nome (alzarsi dalla postazione)
+2. **Accompagnare** personalmente (non indicare la strada)
+3. **Presentare** l'operatore e l'assistente
+4. **Far accomodare** sulla poltrona
+5. **Verificare** il comfort (posizione, luce)
+6. **Consegnare** l'anamnesi compilata all'operatore
 
 **Script:**
 
-> "Sig./Sig.ra [Nome], prego mi segua. Le presento il Dott. [Nome] che si occuperà di lei oggi."
+> "Sig./Sig.ra [Cognome], prego mi segua. Le presento il Dott. [Nome] e [Nome] che si occuperanno di lei oggi. Si metta pure comodo."
 
 ## Durante la Prima Visita
 
-### Colloquio Iniziale
+### Colloquio Iniziale (5-10 minuti)
 
-L'operatore deve:
+L'operatore deve seguire questa sequenza:
 
-1. **Accogliere** - Stretta di mano, presentazione
-2. **Ascoltare** - Motivo della visita, aspettative
-3. **Indagare** - Anamnesi, storia dentale
-4. **Rassicurare** - Spiegare cosa si farà
+| Fase | Obiettivo | Durata |
+|------|-----------|--------|
+| **Accoglienza** | Presentarsi, rompere il ghiaccio | 1 min |
+| **Ascolto** | Capire motivo visita, aspettative | 3-5 min |
+| **Anamnesi** | Approfondire storia medica e dentale | 2-3 min |
+| **Rassicurazione** | Spiegare cosa si farà | 1 min |
 
-### Visita Clinica
+**Domande chiave:**
 
-- Spiegare ogni passaggio
-- Chiedere sempre il permesso
-- Verificare il comfort del paziente
-- Comunicare con tono calmo
+- "Cosa l'ha portata da noi oggi?"
+- "Ha avuto problemi dentali in passato?"
+- "C'è qualcosa che la preoccupa particolarmente?"
+- "Quanto tempo è passato dall'ultima visita?"
+
+### Visita Clinica Completa
+
+**Protocollo visita:**
+
+1. **Esame extraorale**
+   - Simmetria facciale
+   - Linfonodi
+   - ATM (articolazione temporo-mandibolare)
+
+2. **Esame intraorale**
+   - Mucose
+   - Gengive (sondaggio se indicato)
+   - Denti (ispezione e percussione)
+   - Occlusione
+
+3. **Registrazione**
+   - Odontogramma completo
+   - Status parodontale (se necessario)
+   - Annotazione problematiche
+
+**Comunicazione durante la visita:**
+
+- Spiegare ogni passaggio PRIMA di farlo
+- Chiedere sempre il permesso prima di procedere
+- Verificare periodicamente il comfort
+- Usare tono calmo e rassicurante
+- Evitare termini tecnici incomprensibili
 
 ### Esami Diagnostici
 
-Se necessari (RX, foto):
+Se necessari (RX, foto intraorali):
 
-- Spiegare l'utilità
-- Descrivere la procedura
-- Rispettare protocolli radioprotezione
+| Esame | Quando | Cosa Spiegare |
+|-------|--------|---------------|
+| RX endorale | Sospetta patologia localizzata | "Ci serve per vedere l'interno del dente" |
+| OPT (panoramica) | Visione generale | "È una foto completa di tutta la bocca" |
+| Foto intraorali | Documentazione | "Ci aiutano a mostrarle cosa abbiamo visto" |
+
+**Rispettare sempre i protocolli di radioprotezione.**
 
 ## Conclusione Prima Visita
 
 ### Comunicazione Diagnosi
 
-- Linguaggio semplice e comprensibile
-- Supporto visivo (foto, radiografie)
-- Verificare la comprensione
-- Rispondere a tutte le domande
+**Principi:**
+
+1. **Linguaggio semplice** - Evitare gergo medico
+2. **Supporto visivo** - Usare foto, RX, specchio
+3. **Gradualità** - Dal generale al particolare
+4. **Verifica comprensione** - "Le è chiaro? Ha domande?"
+
+**Struttura comunicazione:**
+
+> "Allora [Nome], le spiego quello che abbiamo trovato. In generale la situazione è [buona/da tenere sotto controllo/da trattare]. Nello specifico abbiamo visto..."
 
 ### Presentazione Piano di Trattamento
 
-1. Spiegare le problematiche riscontrate
-2. Illustrare le opzioni terapeutiche
-3. Presentare il preventivo
-4. Non mettere fretta nella decisione
+**Sequenza:**
 
-### Congedo
+1. **Riassumere** le problematiche riscontrate
+2. **Prioritizzare** (urgenze vs trattamenti differibili)
+3. **Illustrare** le opzioni terapeutiche
+4. **Presentare** il preventivo scritto
+5. **NON mettere fretta** nella decisione
 
-**In reception:**
+**Script:**
 
-- Consegnare copia preventivo
-- Fissare eventuale appuntamento successivo
-- Fornire contatti per dubbi
-- Saluto cordiale
+> "Sulla base di quello che abbiamo visto, le propongo questo piano di trattamento. Glielo spiego passo per passo, poi le lascio il preventivo scritto così può valutarlo con calma."
+
+### Gestione del Preventivo
+
+| Situazione | Azione |
+|------------|--------|
+| Paziente accetta subito | Fissare primo appuntamento |
+| Paziente vuole pensare | "Capisco, si prenda il tempo. La ricontattiamo tra qualche giorno?" |
+| Paziente ha dubbi economici | Proporre priorità, dilazione pagamenti |
+| Paziente rifiuta | Ringraziare, lasciare porta aperta |
+
+!!! warning "Importante"
+    Mai insistere o mettere pressione. Il paziente deve sentirsi libero di decidere.
+
+## Congedo
+
+### In Reception
+
+- [ ] Consegnare copia preventivo
+- [ ] Fissare eventuale prossimo appuntamento
+- [ ] Fornire biglietto da visita con contatti
+- [ ] Raccogliere feedback ("Come si è trovato?")
+- [ ] Saluto cordiale
 
 **Script finale:**
 
-> "È stato un piacere conoscerla. Per qualsiasi domanda non esiti a contattarci. Arrivederci e buona giornata!"
+> "È stato un piacere conoscerla, [Nome]. Se ha domande sul preventivo o su qualsiasi altra cosa, non esiti a contattarci. Le auguro una buona giornata!"
 
-## Checklist Prima Visita
+### Follow-up Post Prima Visita
+
+**Entro 24-48 ore:**
+
+- [ ] Inviare email/SMS di ringraziamento
+- [ ] Allegare preventivo in formato digitale (se richiesto)
+
+**Entro 7 giorni (se non ha fissato):**
+
+- [ ] Chiamata di cortesia per feedback
+- [ ] Proporre appuntamento
+
+**SMS di ringraziamento:**
+```
+Studio Smiledoc: Gentile [Nome], grazie per la visita di oggi.
+Per qualsiasi domanda siamo a disposizione al 06 90623936.
+A presto!
+```
+
+## Checklist Completa Prima Visita
+
+### Pre-Visita
+- [ ] Conferma appuntamento inviata
+- [ ] Documentazione preparata
+- [ ] Postazione clinica pronta
 
 ### Documenti Raccolti
-
 - [ ] Anamnesi compilata e firmata
 - [ ] Informativa privacy firmata
 - [ ] Consenso trattamento dati firmato
 - [ ] Consenso marketing (se accettato)
-- [ ] Documento d'identità (copia)
-- [ ] Tessera sanitaria (copia)
+- [ ] Documento identità (visionato)
+- [ ] Tessera sanitaria (copiata)
 
-### Dati Inseriti
-
+### Dati Inseriti nel Gestionale
 - [ ] Anagrafica completa
-- [ ] Anamnesi nel gestionale
+- [ ] Anamnesi digitalizzata
 - [ ] Odontogramma iniziale
 - [ ] Foto/RX (se effettuati)
 - [ ] Piano di trattamento
-- [ ] Preventivo
+- [ ] Preventivo salvato
 
-### Comunicazioni
-
-- [ ] Benvenuto inviato (email/SMS)
-- [ ] Promemoria prossimo appuntamento
-- [ ] Materiale informativo consegnato
+### Post-Visita
+- [ ] Email/SMS ringraziamento inviato
+- [ ] Appuntamento successivo fissato (o recall impostato)
+- [ ] Preventivo consegnato
 
 ## Responsabilità
 
-| Fase | Responsabile |
-|------|--------------|
-| Conferma e preparazione | Segreteria |
-| Accoglienza e documenti | Segreteria |
-| Accompagnamento | Segreteria/Assistente |
-| Visita clinica | Operatore + Assistente |
-| Preventivo | Operatore/Segreteria |
-| Congedo | Segreteria |
+| Fase | Responsabile | Backup |
+|------|--------------|--------|
+| Conferma appuntamento | Segreteria | Sistema automatico |
+| Accoglienza e documenti | Segreteria | Assistente |
+| Verifica anamnesi | Segreteria | Operatore |
+| Accompagnamento | Segreteria/Assistente | - |
+| Visita clinica | Operatore | - |
+| Comunicazione diagnosi | Operatore | - |
+| Preventivo | Operatore + Segreteria | - |
+| Congedo e follow-up | Segreteria | - |
+
+## Indicatori di Qualità
+
+| KPI | Obiettivo | Monitoraggio |
+|-----|-----------|--------------|
+| Tempo attesa in sala | < 10 minuti | Giornaliero |
+| Documenti completi | 100% | Per paziente |
+| Conversione preventivi | > 50% | Mensile |
+| Soddisfazione prima visita | > 4.5/5 | Trimestrale |

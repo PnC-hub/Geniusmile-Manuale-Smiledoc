@@ -1,51 +1,97 @@
 # Gestione Appuntamenti
 
 ## Obiettivo
-Ottimizzare l'agenda dello studio garantendo efficienza operativa e soddisfazione dei pazienti.
 
-## Principi di Programmazione
+Ottimizzare l'agenda dello studio garantendo efficienza operativa, soddisfazione dei pazienti e massimizzazione della produttività delle poltrone.
+
+## Principi Fondamentali
+
+!!! info "Filosofia dell'Agenda"
+    L'agenda è lo strumento principale per la gestione economica dello studio. Un'agenda ben organizzata garantisce:
+
+    - Continuità delle cure per il paziente
+    - Ottimizzazione dei tempi operativi
+    - Riduzione degli sprechi
+    - Soddisfazione di pazienti e operatori
 
 ### Regole Base
 
 1. **Mai sovrapporre** appuntamenti sulla stessa poltrona
-2. **Rispettare** le durate standard
+2. **Rispettare** le durate standard stabilite
 3. **Prevedere** buffer tra appuntamenti complessi
-4. **Bilanciare** il carico di lavoro
-5. **Considerare** le preferenze dell'operatore
+4. **Bilanciare** il carico di lavoro nella giornata
+5. **Considerare** le esigenze cliniche dell'operatore
+6. **Pianificare** sempre il prossimo appuntamento prima della dimissione
 
-### Durate Standard
+## Durate Standard per Prestazione
 
-| Prestazione | Durata Minima | Durata Standard |
-|-------------|---------------|-----------------|
-| Prima visita | 30 min | 45 min |
-| Visita controllo | 15 min | 20 min |
-| Igiene | 45 min | 60 min |
-| Otturazione semplice | 30 min | 45 min |
-| Otturazione complessa | 45 min | 60 min |
-| Devitalizzazione | 45 min | 60-90 min |
-| Estrazione semplice | 20 min | 30 min |
-| Estrazione complessa | 45 min | 60 min |
-| Chirurgia | 60 min | 90+ min |
-| Impronta protesi | 30 min | 45 min |
-| Cementazione | 20 min | 30 min |
-| Emergenza | 15 min | 30 min |
+### Prestazioni di Base
+
+| Prestazione | Durata Minima | Durata Standard | Note |
+|-------------|---------------|-----------------|------|
+| Prima visita | 30 min | 45 min | Include anamnesi, rx, piano trattamento |
+| Visita controllo | 15 min | 20 min | Paziente già in cura |
+| Igiene | 45 min | 60 min | Standard adulti |
+| Igiene parodontale | 60 min | 75 min | Pazienti con parodontite |
+
+### Conservativa
+
+| Prestazione | Durata Minima | Durata Standard | Note |
+|-------------|---------------|-----------------|------|
+| Otturazione semplice (1 superficie) | 30 min | 45 min | |
+| Otturazione complessa (2+ superfici) | 45 min | 60 min | |
+| Ricostruzione | 45 min | 60 min | |
+
+### Endodonzia
+
+| Prestazione | Durata Minima | Durata Standard | Note |
+|-------------|---------------|-----------------|------|
+| Devitalizzazione monocanalare | 45 min | 60 min | |
+| Devitalizzazione pluricanalare | 60 min | 90 min | |
+| Ritrattamento | 60 min | 90 min | Maggiore complessità |
+
+### Chirurgia
+
+| Prestazione | Durata Minima | Durata Standard | Note |
+|-------------|---------------|-----------------|------|
+| Estrazione semplice | 20 min | 30 min | |
+| Estrazione complessa | 45 min | 60 min | Dente incluso, fratturato |
+| Chirurgia orale | 60 min | 90 min | |
+| Implanto singolo | 45 min | 60 min | |
+| Implanti multipli | 90 min | 120 min | |
+
+### Protesi
+
+| Prestazione | Durata Minima | Durata Standard | Note |
+|-------------|---------------|-----------------|------|
+| Impronta | 30 min | 45 min | |
+| Prova | 20 min | 30 min | |
+| Cementazione | 20 min | 30 min | |
+| Consegna protesi mobile | 30 min | 45 min | Include istruzioni |
+
+### Urgenze
+
+| Prestazione | Durata Minima | Durata Standard | Note |
+|-------------|---------------|-----------------|------|
+| Visita urgenza | 15 min | 30 min | Valutazione e terapia del dolore |
+| Emergenza | 15 min | 30 min | Slot dedicato |
 
 ## Struttura dell'Agenda
 
-### Fasce Orarie
+### Fasce Orarie Tipo
 
 ```
 MATTINA (09:00 - 13:00)
-├── 09:00-09:30  Slot versatile
-├── 09:30-10:30  Slot lungo (chirurgia, endo)
-├── 10:30-11:00  Buffer/emergenze
+├── 09:00-09:45  Slot Prima visita / Igiene
+├── 09:45-10:45  Slot lungo (chirurgia, endo)
+├── 10:45-11:00  Buffer emergenze
 ├── 11:00-12:00  Slot lungo
-└── 12:00-13:00  Slot versatile
+└── 12:00-13:00  Slot versatile / Controlli
 
 POMERIGGIO (14:30 - 19:30)
-├── 14:30-15:30  Slot lungo
+├── 14:30-15:30  Slot lungo (chirurgia)
 ├── 15:30-16:30  Slot lungo
-├── 16:30-17:00  Buffer/emergenze
+├── 16:30-17:00  Buffer emergenze
 ├── 17:00-18:00  Slot lungo
 ├── 18:00-19:00  Slot versatile
 └── 19:00-19:30  Buffer chiusura
@@ -53,161 +99,231 @@ POMERIGGIO (14:30 - 19:30)
 
 ### Slot Riservati
 
-| Tipo Slot | Orario Consigliato | Scopo |
-|-----------|-------------------|-------|
-| Emergenze | 10:30, 16:30 | Urgenze del giorno |
-| Prima visita | Prima mattina/primo pomeriggio | Migliore accoglienza |
-| Chirurgia | Mattina | Operatore più fresco |
-| Bambini | Primo pomeriggio | Dopo la scuola |
-| Lavoratori | Prima/ultima fascia | Compatibilità lavoro |
+| Tipo Slot | Orario Consigliato | Motivazione |
+|-----------|-------------------|-------------|
+| Emergenze | 10:30-11:00, 16:30-17:00 | Gestire urgenze senza sconvolgere agenda |
+| Prima visita | 09:00, 14:30 | Accoglienza ottimale, tempo per preventivo |
+| Chirurgia | Mattina (09:30-12:00) | Operatore più fresco, paziente a digiuno |
+| Bambini | Primo pomeriggio | Dopo la scuola, più collaborativi |
+| Lavoratori | Prima/ultima fascia | Compatibilità con orari lavoro |
 
 ## Procedura di Prenotazione
 
-### Nuovi Pazienti
+### Prima Visita (Nuovi Pazienti)
 
-1. **Raccogliere dati** essenziali
-2. **Capire il motivo** della visita
-3. **Proporre** slot prima visita (45 min)
-4. **Confermare** l'appuntamento
-5. **Inviare** conferma SMS/email
+!!! warning "Attenzione"
+    La prima visita è il momento più importante per l'acquisizione del paziente. Dedicare il tempo necessario.
 
-**Slot preferiti per prime visite:**
-- 09:00 - 09:45
-- 14:30 - 15:15
+**Passaggi:**
+
+1. **Raccolta dati anagrafici**
+   - Nome, cognome, data di nascita
+   - Recapiti (telefono, email)
+   - Consenso SMS/email per comunicazioni
+
+2. **Comprensione del motivo**
+   - "Come mai ci contatta?"
+   - "Ha un problema specifico o desidera un controllo generale?"
+   - Annotare sintomi riferiti
+
+3. **Proposta appuntamento**
+   - Slot dedicati: 09:00-09:45 o 14:30-15:15
+   - Durata: 45 minuti
+   - Spiegare cosa comporta la prima visita
+
+4. **Conferma**
+   - Riassumere data, ora, indirizzo
+   - Inviare SMS/email di conferma
+   - Richiedere documenti (tessera sanitaria, referti precedenti)
 
 ### Pazienti Esistenti
 
 1. **Verificare** la cartella clinica
-2. **Controllare** il piano di trattamento
+2. **Controllare** il piano di trattamento attivo
 3. **Identificare** la prestazione da programmare
-4. **Selezionare** la durata corretta
-5. **Proporre** disponibilità
-6. **Confermare** l'appuntamento
+4. **Selezionare** la durata corretta dalla tabella
+5. **Proporre** 2-3 alternative di disponibilità
+6. **Confermare** e inviare promemoria
 
-### Urgenze
+### Programmazione Fine Seduta
 
-!!! warning "Gestione Urgenze"
-    Le urgenze devono essere inserite negli slot dedicati. Se non disponibili, valutare l'inserimento in slot buffer.
+!!! tip "Best Practice"
+    **SEMPRE** programmare il prossimo appuntamento prima che il paziente lasci lo studio.
+    Il paziente deve uscire con la data del prossimo appuntamento.
 
-**Criteri:**
+**Script:**
+> "Abbiamo finito per oggi. Per la prossima seduta avrei disponibilità [giorno] alle [ora] oppure [giorno] alle [ora]. Quale preferisce?"
 
-| Urgenza | Tempistica |
-|---------|------------|
-| Dolore acuto | Stesso giorno |
-| Trauma | Stesso giorno |
-| Gonfiore | Stesso giorno |
-| Protesi rotta | Entro 24h |
-| Corona staccata | Entro 24h |
-| Dolore moderato | Entro 48h |
+## Gestione Urgenze
 
-## Regole per Tipologia di Appuntamento
+### Criteri di Priorità
 
-### Chirurgia/Implantologia
+| Livello | Sintomo | Tempistica | Gestione |
+|---------|---------|------------|----------|
+| **ROSSO** | Dolore acuto, trauma, gonfiore | Stesso giorno | Inserire in slot emergenza |
+| **ARANCIO** | Protesi rotta, corona staccata | Entro 24h | Primo slot disponibile |
+| **GIALLO** | Dolore moderato, sensibilità | Entro 48h | Slot standard |
+| **VERDE** | Fastidio lieve | Programmabile | Prossima disponibilità |
 
-- Programmare al mattino
-- Prevedere tempo extra (buffer dopo)
-- Verificare anamnesi aggiornata
-- Confermare preparazione paziente
+### Procedura per Urgenze
 
-### Sedute Multiple
+1. **Triage telefonico** - valutare urgenza reale
+2. **Verificare slot emergenza** disponibili
+3. **Se slot pieno:**
+   - Valutare inserimento in buffer
+   - Contattare pazienti programmati per anticipi/posticipi
+   - Mai sovraccaricare l'operatore
+4. **Raccogliere informazioni** per l'operatore
+5. **Confermare** orario al paziente
 
-Per piani di trattamento complessi:
+### Script Triage Urgenze
 
-1. Programmare le sedute in sequenza logica
-2. Rispettare tempi di guarigione
-3. Evitare sedute ravvicinate impegnative
-4. Considerare impegni del paziente
+> "Mi descriva il problema. Da quanto tempo ha questo dolore? Su una scala da 1 a 10, quanto è forte? Riesce a mangiare/dormire? Ha gonfiore o febbre?"
+
+## Regole per Tipologie Specifiche
+
+### Chirurgia e Implantologia
+
+- ✅ Programmare al mattino (paziente a digiuno, operatore fresco)
+- ✅ Prevedere buffer dopo l'intervento
+- ✅ Verificare anamnesi aggiornata
+- ✅ Confermare profilassi antibiotica se prescritta
+- ✅ Verificare che paziente abbia accompagnatore (se previsto)
+- ❌ Mai programmare interventi complessi a fine giornata
+
+### Piani di Trattamento Complessi
+
+Per trattamenti che richiedono più sedute:
+
+1. **Pianificare** tutte le sedute in sequenza logica
+2. **Rispettare** i tempi di guarigione tra le fasi
+3. **Evitare** sedute ravvicinate impegnative
+4. **Concordare** con il paziente un calendario realistico
+5. **Bloccare** le date in anticipo
 
 ### Bambini
 
-- Slot primo pomeriggio
-- Sedute brevi (max 30 min)
-- Buffer dopo per eventuale prolungamento
-- Annotare età e comportamento
+- Slot preferito: primo pomeriggio (14:30-16:00)
+- Durata massima: 30 minuti effettivi
+- Prevedere tempo extra per gestione comportamentale
+- Annotare in agenda: età e note sul comportamento
+- Mai programmare dopo lunga attesa
 
 ## Modifiche e Spostamenti
 
-### Richiesta del Paziente
+### Su Richiesta del Paziente
 
-1. Verificare motivo
-2. Proporre alternative
-3. Aggiornare l'agenda
-4. Inviare nuova conferma
-5. Gestire lo slot liberato
+1. **Verificare** il motivo (anticipare bisogni futuri)
+2. **Proporre** alternative compatibili
+3. **Aggiornare** l'agenda
+4. **Inviare** nuova conferma
+5. **Gestire** lo slot liberato:
+   - Contattare lista d'attesa
+   - Proporre anticipo ad altri pazienti
+   - Utilizzare per recall
 
-### Richiesta dello Studio
+### Su Richiesta dello Studio
 
-1. Contattare il paziente tempestivamente
-2. Scusarsi per il disagio
-3. Proporre alternative convenienti
-4. Documentare la comunicazione
+1. **Contattare** il paziente con anticipo (minimo 24-48h)
+2. **Scusarsi** per il disagio
+3. **Proporre** alternative convenienti per il paziente
+4. **Offrire** priorità per prossimi appuntamenti
+5. **Documentare** la comunicazione in cartella
 
-## Ottimizzazione Agenda
+## Ottimizzazione dell'Agenda
 
-### Evitare "Buchi"
+### Prevenire i "Buchi"
 
-- Utilizzare lista d'attesa
-- Chiamare per anticipi
-- Proporre slot adiacenti
-- Contattare pazienti per recall
+| Strategia | Azione |
+|-----------|--------|
+| Lista d'attesa | Chiamare pazienti in lista per slot liberati |
+| Anticipi | Proporre anticipi a pazienti con appuntamenti lontani |
+| Recall | Contattare pazienti in recall per slot vuoti |
+| Conferme | Confermare sempre 24-48h prima |
 
-### Evitare Sovraccarico
+### Prevenire il Sovraccarico
 
-- Non accettare "urgenze" fuori dagli slot
-- Rispettare le durate
-- Prevedere buffer
-- Saper dire "no" con alternative
+- Non accettare urgenze "finte" fuori dagli slot
+- Rispettare rigorosamente le durate
+- Saper proporre alternative invece di sovraccaricare
+- Comunicare al paziente tempi realistici
 
-### Bilanciamento
+### Giornata Tipo Bilanciata
 
 ```
-ESEMPIO GIORNATA BILANCIATA
+ESEMPIO - POLTRONA OPERATORE
 
-09:00  Prima visita (45 min) - Facile
-09:45  Igiene (60 min) - Media
-10:45  Buffer (15 min)
-11:00  Endodonzia (60 min) - Impegnativa
-12:00  Controllo (20 min) - Facile
-12:20  Otturazione (40 min) - Media
+09:00  Prima visita (45 min)        ⬜ Facile
+09:45  Igiene (60 min)              ⬜ Media
+10:45  Buffer emergenze (15 min)
+11:00  Endodonzia (60 min)          ⬛ Impegnativa
+12:00  Controllo (20 min)           ⬜ Facile
+12:20  Otturazione (40 min)         ⬜ Media
 ---
-14:30  Chirurgia (90 min) - Impegnativa
+14:30  Chirurgia (90 min)           ⬛ Impegnativa
 16:00  Buffer (30 min)
-16:30  Igiene (60 min) - Media
-17:30  Controllo (20 min) - Facile
-17:50  Otturazione (40 min) - Media
-18:30  Cementazione (30 min) - Facile
+16:30  Igiene (60 min)              ⬜ Media
+17:30  Controllo (20 min)           ⬜ Facile
+17:50  Otturazione (40 min)         ⬜ Media
+18:30  Cementazione (30 min)        ⬜ Facile
 19:00  Buffer chiusura
 ```
 
-## Documentazione
+**Principio:** alternare prestazioni impegnative e leggere.
 
-### Nel Gestionale
+## Documentazione nel Gestionale
 
-Per ogni appuntamento:
+### Campi Obbligatori per Appuntamento
 
-| Campo | Informazione |
-|-------|--------------|
-| Paziente | Anagrafica collegata |
-| Data/Ora | Inizio appuntamento |
-| Durata | Prevista |
-| Operatore | Assegnato |
-| Prestazione | Prevista |
-| Note | Eventuali |
-| Stato | Confermato/Da confermare |
+| Campo | Informazione | Note |
+|-------|--------------|------|
+| Paziente | Anagrafica collegata | Verificare correttezza |
+| Data/Ora | Inizio previsto | |
+| Durata | Prevista | Da tabella standard |
+| Operatore | Assegnato | |
+| Poltrona | Assegnata | |
+| Prestazione | Prevista | Codice o descrizione |
+| Note | Eventuali | Preparazioni, allergie, etc. |
+| Stato | Confermato/Da confermare | Aggiornare sempre |
 
-### Statistiche
+### Codici Colore Agenda (esempio)
 
-Monitorare periodicamente:
+| Colore | Significato |
+|--------|-------------|
+| 🟢 Verde | Confermato |
+| 🟡 Giallo | Da confermare |
+| 🔵 Blu | Prima visita |
+| 🔴 Rosso | Urgenza |
+| ⬜ Grigio | Annullato |
 
-- Tasso di occupazione
-- No-show rate
-- Ritardi medi
+## Statistiche e Monitoraggio
+
+### KPI da Monitorare
+
+| Indicatore | Formula | Obiettivo |
+|------------|---------|-----------|
+| Tasso occupazione | Ore prenotate / Ore disponibili | > 85% |
+| No-show rate | Mancate presentazioni / Appuntamenti | < 5% |
+| Tasso conferma | Confermati / Programmati | > 95% |
+| Ritardo medio | Media ritardi effettivi | < 10 min |
+
+### Analisi Periodica
+
+Settimanale:
+- Verifica slot vuoti
+- Analisi no-show
+- Recupero pazienti persi
+
+Mensile:
+- Tasso occupazione per poltrona
 - Prestazioni più richieste
+- Picchi e cali di richiesta
 
 ## Responsabilità
 
 | Ruolo | Compito |
 |-------|---------|
-| Segretaria | Programmazione, modifiche, conferme |
-| Coordinatore | Supervisione, ottimizzazione, criticità |
-| Operatori | Comunicare durate reali, esigenze |
+| Segreteria | Programmazione, modifiche, conferme, gestione urgenze |
+| Coordinatore | Supervisione, ottimizzazione, analisi KPI |
+| Operatori | Comunicare durate reali, esigenze specifiche, segnalare criticità |
+| Direzione | Definizione slot, strategie di ottimizzazione |
