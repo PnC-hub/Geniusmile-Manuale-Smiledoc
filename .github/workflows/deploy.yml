@@ -13,36 +13,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      
+
       - name: Install dependencies
-        run: |
-          pip install mkdocs-material
-      
+        run: pip install mkdocs-material
+
       - name: Build site
         run: mkdocs build
-      
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H 93.186.255.213 >> ~/.ssh/known_hosts
+
       - name: Deploy to server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: 93.186.255.213
-          username: geniusfast
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "site/*"
-          target: "/tmp/manuale-smiledoc"
-          strip_components: 1
-      
-      - name: Move to web directory
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: 93.186.255.213
-          username: geniusfast
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            sudo rm -rf /var/www/vhosts/geniusmile.com/manuale-smiledoc/*
-            sudo mv /tmp/manuale-smiledoc/* /var/www/vhosts/geniusmile.com/manuale-smiledoc/
-            sudo chown -R geniusmile:psacln /var/www/vhosts/geniusmile.com/manuale-smiledoc/
+        run: |
+          rsync -avz --delete site/ geniusfast@93.186.255.213:/tmp/manuale-deploy/
+          ssh geniusfast@93.186.255.213 "sudo rm -rf /var/www/vhosts/geniusmile.com/manuale-smiledoc/* && sudo mv /tmp/manuale-deploy/* /var/www/vhosts/geniusmile.com/manuale-smiledoc/ && sudo chown -R geniusmile:psacln /var/www/vhosts/geniusmile.com/manuale-smiledoc/"
