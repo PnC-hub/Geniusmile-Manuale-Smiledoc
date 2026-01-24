@@ -1,50 +1,89 @@
-# Benvenuto nel Manuale Smiledoc
+# Manuale Operativo Smiledoc
 
-Questo manuale contiene tutte le procedure, i protocolli e le linee guida per la gestione ottimale dello Studio Dentistico Smiledoc.
+Benvenuto nel manuale operativo dello Studio Dentistico Smiledoc. Questo documento raccoglie tutte le procedure, i protocolli e le linee guida per garantire un servizio di eccellenza.
 
-## Sezioni
+## Navigazione Rapida
 
 <div class="grid cards" markdown>
 
--   :material-clipboard-check:{ .lg .middle } **Protocolli**
+-   :material-medical-bag:{ .lg .middle } **Protocolli Clinici**
 
     ---
 
-    Protocolli clinici e operativi per garantire standard elevati di qualità.
+    Sterilizzazione, igiene, emergenze, radiologia e accoglienza del paziente.
 
     [:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
 
--   :material-file-document:{ .lg .middle } **Procedure**
+-   :material-clipboard-list:{ .lg .middle } **Procedure Operative**
 
     ---
 
-    Procedure amministrative e gestionali per l'organizzazione quotidiana.
+    Segreteria, amministrazione, magazzino e comunicazione con i pazienti.
 
     [:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
 
--   :material-file-edit:{ .lg .middle } **Moduli**
+-   :material-file-document-edit:{ .lg .middle } **Moduli e Documenti**
 
     ---
 
-    Moduli, template e documenti pronti all'uso.
+    Consensi, anamnesi, privacy, documentazione clinica e checklist.
 
     [:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
 
--   :material-school:{ .lg .middle } **Formazione**
+-   :material-shield-check:{ .lg .middle } **Sicurezza e Normative**
 
     ---
 
-    Materiale formativo per il personale.
+    DVR, normativa sanitaria, gestione rifiuti e radioprotezione.
 
-    [:octicons-arrow-right-24: Vai alla Formazione](formazione/index.md)
+    [:octicons-arrow-right-24: Vai a Sicurezza](sicurezza/index.md)
+
+-   :material-account-group:{ .lg .middle } **Risorse Umane**
+
+    ---
+
+    Onboarding, ruoli, formazione e valutazione del personale.
+
+    [:octicons-arrow-right-24: Vai a Risorse Umane](risorse-umane/index.md)
+
+-   :material-chart-line:{ .lg .middle } **Qualità**
+
+    ---
+
+    Standard di servizio, indicatori di performance e miglioramento continuo.
+
+    [:octicons-arrow-right-24: Vai a Qualità](qualita/index.md)
 
 </div>
 
 ---
 
-## Contatti
+## Informazioni Studio
 
-**Studio Dentistico Smiledoc**  
-Via Monte Circeo 12, 00015 Monterotondo (RM)  
-Tel: 06 90623936  
-Email: info@smiledoc.it
+| Campo | Dato |
+|-------|------|
+| **Denominazione** | Studio Dentistico Smiledoc |
+| **Indirizzo** | Via Monte Circeo 12, 00015 Monterotondo (RM) |
+| **Telefono** | 06 90623936 |
+| **Email** | info@smiledoc.it |
+| **Direttore Sanitario** | [Inserire nome] |
+
+## Come Usare Questo Manuale
+
+- **Nuovo personale**: inizia dalla sezione [Risorse Umane > Onboarding](risorse-umane/onboarding/primo-giorno.md)
+- **Attività quotidiana**: consulta [Procedure Operative](procedure/index.md) e [Checklist](moduli/checklist/apertura-studio.md)
+- **Dubbi clinici**: riferirsi ai [Protocolli Clinici](protocolli/index.md)
+- **Documenti paziente**: trova i moduli in [Moduli e Documenti](moduli/index.md)
+- **Sicurezza**: consulta [Sicurezza e Normative](sicurezza/index.md)
+
+## Aggiornamenti
+
+Questo manuale viene aggiornato regolarmente. Verificare sempre di consultare la versione più recente.
+
+| Versione | Data | Modifiche |
+|----------|------|-----------|
+| 1.0 | [Data] | Prima pubblicazione |
+
+---
+
+*Per segnalare errori o proporre miglioramenti, contattare il Responsabile Qualità.*

@@ -23,9 +23,11 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
   icon:
     logo: material/tooth
   favicon: assets/favicon.png
@@ -43,17 +45,170 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Home: index.md
-  - Protocolli:
-    - Introduzione: protocolli/index.md
-  - Procedure:
-    - Introduzione: procedure/index.md
-  - Moduli:
-    - Introduzione: moduli/index.md
-  - Formazione:
-    - Introduzione: formazione/index.md
+
+  - Protocolli Clinici:
+    - protocolli/index.md
+    - Sterilizzazione:
+      - protocolli/sterilizzazione/index.md
+      - protocolli/sterilizzazione/ciclo-sterilizzazione.md
+      - protocolli/sterilizzazione/tracciabilita.md
+      - protocolli/sterilizzazione/manutenzione-autoclave.md
+    - Igiene e Disinfezione:
+      - protocolli/igiene/index.md
+      - protocolli/igiene/disinfezione-superfici.md
+      - protocolli/igiene/gestione-rifiuti.md
+      - protocolli/igiene/igiene-mani.md
+    - Accoglienza Paziente:
+      - protocolli/accoglienza/index.md
+      - protocolli/accoglienza/prima-visita.md
+      - protocolli/accoglienza/visite-successive.md
+      - protocolli/accoglienza/gestione-attesa.md
+    - Emergenze:
+      - protocolli/emergenze/index.md
+      - protocolli/emergenze/emergenze-mediche.md
+      - protocolli/emergenze/reazioni-allergiche.md
+      - protocolli/emergenze/sincope.md
+      - protocolli/emergenze/kit-emergenza.md
+    - Radiologia:
+      - protocolli/radiologia/index.md
+      - protocolli/radiologia/rx-endorali.md
+      - protocolli/radiologia/panoramica.md
+      - protocolli/radiologia/protezione-paziente.md
+
+  - Procedure Operative:
+    - procedure/index.md
+    - Segreteria:
+      - procedure/segreteria/index.md
+      - procedure/segreteria/gestione-telefonate.md
+      - procedure/segreteria/gestione-appuntamenti.md
+      - procedure/segreteria/conferma-appuntamenti.md
+      - procedure/segreteria/gestione-disdette.md
+      - procedure/segreteria/lista-attesa.md
+    - Amministrazione:
+      - procedure/amministrazione/index.md
+      - procedure/amministrazione/preventivi.md
+      - procedure/amministrazione/fatturazione.md
+      - procedure/amministrazione/incassi.md
+      - procedure/amministrazione/recupero-crediti.md
+      - procedure/amministrazione/prima-nota.md
+    - Magazzino:
+      - procedure/magazzino/index.md
+      - procedure/magazzino/gestione-ordini.md
+      - procedure/magazzino/inventario.md
+      - procedure/magazzino/scadenze.md
+      - procedure/magazzino/fornitori.md
+    - Comunicazione:
+      - procedure/comunicazione/index.md
+      - procedure/comunicazione/recall-pazienti.md
+      - procedure/comunicazione/campagne-sms.md
+      - procedure/comunicazione/recensioni.md
+      - procedure/comunicazione/reclami.md
+
+  - Moduli e Documenti:
+    - moduli/index.md
+    - Consensi Informati:
+      - moduli/consensi/index.md
+      - moduli/consensi/consenso-generale.md
+      - moduli/consensi/consenso-chirurgia.md
+      - moduli/consensi/consenso-implantologia.md
+      - moduli/consensi/consenso-ortodonzia.md
+      - moduli/consensi/consenso-endodonzia.md
+      - moduli/consensi/consenso-sbiancamento.md
+      - moduli/consensi/consenso-minori.md
+    - Anamnesi:
+      - moduli/anamnesi/index.md
+      - moduli/anamnesi/anamnesi-adulti.md
+      - moduli/anamnesi/anamnesi-pediatrica.md
+      - moduli/anamnesi/aggiornamento-anamnesi.md
+    - Privacy e GDPR:
+      - moduli/privacy/index.md
+      - moduli/privacy/informativa-privacy.md
+      - moduli/privacy/consenso-trattamento.md
+      - moduli/privacy/consenso-marketing.md
+    - Documenti Clinici:
+      - moduli/clinici/index.md
+      - moduli/clinici/cartella-clinica.md
+      - moduli/clinici/piano-trattamento.md
+      - moduli/clinici/diario-clinico.md
+    - Checklist:
+      - moduli/checklist/index.md
+      - moduli/checklist/apertura-studio.md
+      - moduli/checklist/chiusura-studio.md
+      - moduli/checklist/preparazione-riunito.md
+      - moduli/checklist/controllo-settimanale.md
+      - moduli/checklist/controllo-mensile.md
+
+  - Sicurezza e Normative:
+    - sicurezza/index.md
+    - DVR e Sicurezza:
+      - sicurezza/dvr/index.md
+      - sicurezza/dvr/rischi-specifici.md
+      - sicurezza/dvr/dpi.md
+      - sicurezza/dvr/piano-emergenza.md
+    - Normativa Sanitaria:
+      - sicurezza/normativa/index.md
+      - sicurezza/normativa/autorizzazioni.md
+      - sicurezza/normativa/requisiti-strutturali.md
+      - sicurezza/normativa/obblighi-sanitari.md
+    - Gestione Rifiuti:
+      - sicurezza/rifiuti/index.md
+      - sicurezza/rifiuti/classificazione.md
+      - sicurezza/rifiuti/smaltimento.md
+      - sicurezza/rifiuti/registro-carico-scarico.md
+    - Radioprotezione:
+      - sicurezza/radioprotezione/index.md
+      - sicurezza/radioprotezione/esperto-qualificato.md
+      - sicurezza/radioprotezione/dosimetria.md
+      - sicurezza/radioprotezione/controlli-periodici.md
+
+  - Risorse Umane:
+    - risorse-umane/index.md
+    - Onboarding:
+      - risorse-umane/onboarding/index.md
+      - risorse-umane/onboarding/primo-giorno.md
+      - risorse-umane/onboarding/prima-settimana.md
+      - risorse-umane/onboarding/primo-mese.md
+    - Ruoli e Mansioni:
+      - risorse-umane/ruoli/index.md
+      - risorse-umane/ruoli/segretaria.md
+      - risorse-umane/ruoli/assistente-poltrona.md
+      - risorse-umane/ruoli/igienista.md
+      - risorse-umane/ruoli/odontoiatra.md
+    - Formazione:
+      - risorse-umane/formazione/index.md
+      - risorse-umane/formazione/formazione-obbligatoria.md
+      - risorse-umane/formazione/aggiornamento-ecm.md
+      - risorse-umane/formazione/formazione-software.md
+    - Valutazione:
+      - risorse-umane/valutazione/index.md
+      - risorse-umane/valutazione/obiettivi.md
+      - risorse-umane/valutazione/feedback.md
+
+  - Qualità:
+    - qualita/index.md
+    - Standard di Servizio:
+      - qualita/standard/index.md
+      - qualita/standard/tempi-attesa.md
+      - qualita/standard/comunicazione-paziente.md
+      - qualita/standard/follow-up.md
+    - Indicatori:
+      - qualita/indicatori/index.md
+      - qualita/indicatori/kpi-clinici.md
+      - qualita/indicatori/kpi-gestionali.md
+      - qualita/indicatori/soddisfazione-paziente.md
+    - Miglioramento Continuo:
+      - qualita/miglioramento/index.md
+      - qualita/miglioramento/audit-interni.md
+      - qualita/miglioramento/azioni-correttive.md
+      - qualita/miglioramento/riunioni-staff.md
 
 extra:
   social:
