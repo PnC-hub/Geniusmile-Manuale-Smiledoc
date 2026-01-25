@@ -107,10 +107,10 @@ La segretaria è il primo punto di contatto con il paziente e gestisce tutta l'o
 
 ## Procedure di Riferimento
 
-- [Gestione Telefonate](../../procedure/segreteria/gestione-telefono.md)
-- [Gestione Appuntamenti](../../procedure/segreteria/appuntamenti.md)
-- [Accoglienza Paziente](../../protocolli/accoglienza/primo-contatto.md)
-- [Gestione Preventivi](../../procedure/amministrazione/preventivi.md)
+- [Gestione Telefonate](../../../clinica/procedure/segreteria/gestione-telefonate.md)
+- [Gestione Appuntamenti](../../../clinica/procedure/segreteria/gestione-appuntamenti.md)
+- [Accoglienza Paziente](../../../clinica/protocolli/accoglienza/prima-visita.md)
+- [Gestione Preventivi](../amministrazione/preventivi.md)
 
 ## Formazione Obbligatoria
 
