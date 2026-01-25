@@ -1,6 +1,30 @@
 # Manuale Operativo Smiledoc
 
+!!! danger "AVVISO LEGALE IMPORTANTE"
+    Questo Manuale Operativo costituisce **documento ufficiale** di Smiledoc S.r.l. La consultazione e la presa visione dei contenuti creano un **obbligo contrattuale** per tutto il personale. Il mancato rispetto delle procedure documentate può costituire motivo di provvedimento disciplinare.
+
+    **Prima di procedere**, ogni collaboratore deve:
+
+    1. Consultare il [Sistema Documentale](sistema-documentale/index.md)
+    2. Firmare il [Modulo di Presa Visione](sistema-documentale/presa-visione.md)
+
+---
+
 Benvenuto nel manuale operativo delle Cliniche Smiledoc. Questo documento raccoglie tutte le procedure, i protocolli e le linee guida per garantire un servizio di eccellenza.
+
+## Sistema di Controllo Documentale
+
+!!! info "Validità Legale Garantita"
+    Questo manuale è gestito tramite un **Sistema di Controllo Documentale** conforme alla norma ISO 9001:2015 che garantisce:
+
+    - Tracciabilità di ogni modifica
+    - Integrità verificabile dei documenti
+    - Non alterabilità retroattiva
+    - Prova della presa visione
+
+    [:material-shield-check: Vai al Sistema Documentale](sistema-documentale/index.md){ .md-button .md-button--primary }
+
+---
 
 ## Struttura del Manuale
 
@@ -81,9 +105,26 @@ Questo manuale viene aggiornato regolarmente. Verificare sempre di consultare la
 
 | Versione | Data | Modifiche |
 |----------|------|-----------|
+| 3.0 | Gennaio 2026 | Sistema Documentale con validità legale |
 | 2.0 | Gennaio 2026 | Nuova struttura: Generali, Corporate, Clinica, Sede |
 | 1.0 | Gennaio 2026 | Prima pubblicazione |
 
 ---
 
+!!! warning "Obblighi del Personale"
+    Ogni collaboratore è tenuto a:
+
+    - Consultare regolarmente questo manuale
+    - Firmare il modulo di presa visione
+    - Rispettare tutte le procedure documentate
+    - Segnalare eventuali non conformità
+
+    La consultazione di questo manuale e la firma della presa visione costituiscono **prova documentale** della conoscenza delle procedure aziendali.
+
+---
+
 *Per segnalare errori o proporre miglioramenti, contattare il Responsabile Qualità.*
+
+---
+
+**Smiledoc S.r.l.** | Via Monte Circeo 12, 00015 Monterotondo (RM) | Sistema Documentale Conforme ISO 9001:2015
