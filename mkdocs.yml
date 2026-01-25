@@ -60,6 +60,7 @@ nav:
 
   - Sistema Documentale:
     - sistema-documentale/index.md
+    - sistema-documentale/riepilogo-sistema.md
     - sistema-documentale/politica-controllo.md
     - sistema-documentale/registro-documenti.md
     - sistema-documentale/registro-revisioni.md
