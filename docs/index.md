@@ -1,80 +1,79 @@
 # Manuale Operativo Smiledoc
 
-Benvenuto nel manuale operativo dello Studio Dentistico Smiledoc. Questo documento raccoglie tutte le procedure, i protocolli e le linee guida per garantire un servizio di eccellenza.
+Benvenuto nel manuale operativo delle Cliniche Smiledoc. Questo documento raccoglie tutte le procedure, i protocolli e le linee guida per garantire un servizio di eccellenza.
 
-## Navigazione Rapida
+## Struttura del Manuale
 
 <div class="grid cards" markdown>
 
--   :material-medical-bag:{ .lg .middle } **Protocolli Clinici**
+-   :material-earth:{ .lg .middle } **Generali**
 
     ---
 
-    Sterilizzazione, igiene, emergenze, radiologia e accoglienza del paziente.
+    Manuali validi per **tutti** i collaboratori, indipendentemente dal ruolo o dalla sede.
 
-    [:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
+    [:octicons-arrow-right-24: Vai ai Generali](generali/index.md)
 
--   :material-clipboard-list:{ .lg .middle } **Procedure Operative**
-
-    ---
-
-    Segreteria, amministrazione, magazzino e comunicazione con i pazienti.
-
-    [:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
-
--   :material-file-document-edit:{ .lg .middle } **Moduli e Documenti**
+-   :material-office-building:{ .lg .middle } **Corporate**
 
     ---
 
-    Consensi, anamnesi, privacy, documentazione clinica e checklist.
+    Manuali per la **sede centrale** di governo e le funzioni direzionali.
 
-    [:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+    [:octicons-arrow-right-24: Vai a Corporate](corporate/index.md)
 
--   :material-shield-check:{ .lg .middle } **Sicurezza e Normative**
-
-    ---
-
-    DVR, normativa sanitaria, gestione rifiuti e radioprotezione.
-
-    [:octicons-arrow-right-24: Vai a Sicurezza](sicurezza/index.md)
-
--   :material-account-group:{ .lg .middle } **Risorse Umane**
+-   :material-hospital-building:{ .lg .middle } **Clinica**
 
     ---
 
-    Onboarding, ruoli, formazione e valutazione del personale.
+    Manuali per il **funzionamento operativo** della clinica.
 
-    [:octicons-arrow-right-24: Vai a Risorse Umane](risorse-umane/index.md)
+    [:octicons-arrow-right-24: Vai a Clinica](clinica/index.md)
 
--   :material-chart-line:{ .lg .middle } **Qualità**
+-   :material-map-marker:{ .lg .middle } **Sede**
 
     ---
 
-    Standard di servizio, indicatori di performance e miglioramento continuo.
+    Manuali **specifici** per ogni singola sede.
 
-    [:octicons-arrow-right-24: Vai a Qualità](qualita/index.md)
+    [:octicons-arrow-right-24: Vai a Sede](sede/index.md)
 
 </div>
 
 ---
 
-## Informazioni Studio
+## Legenda Contenuti
 
-| Campo | Dato |
-|-------|------|
-| **Denominazione** | Studio Dentistico Smiledoc |
-| **Indirizzo** | Via Monte Circeo 12, 00015 Monterotondo (RM) |
-| **Telefono** | 06 90623936 |
-| **Email** | info@smiledoc.it |
-| **Direttore Sanitario** | [Inserire nome] |
+Ogni sezione contiene:
+
+| Tipo | Descrizione |
+|------|-------------|
+| **Protocolli** | Regole e standard da seguire |
+| **Procedure** | Passaggi operativi dettagliati |
+| **Checklist** | Liste di controllo per le attività |
+| **Moduli** | Modulistica e documenti |
+
+---
+
+## A Chi si Rivolge
+
+| Sezione | Destinatari |
+|---------|-------------|
+| **Generali** | Tutti i collaboratori |
+| **Corporate** | Direzione, Amministrazione centrale, HR |
+| **Clinica** | Personale clinico, Segreteria, Coordinatori |
+| **Sede** | Personale della specifica sede |
+
+---
 
 ## Come Usare Questo Manuale
 
-- **Nuovo personale**: inizia dalla sezione [Risorse Umane > Onboarding](risorse-umane/onboarding/primo-giorno.md)
-- **Attività quotidiana**: consulta [Procedure Operative](procedure/index.md) e [Checklist](moduli/checklist/apertura-studio.md)
-- **Dubbi clinici**: riferirsi ai [Protocolli Clinici](protocolli/index.md)
-- **Documenti paziente**: trova i moduli in [Moduli e Documenti](moduli/index.md)
-- **Sicurezza**: consulta [Sicurezza e Normative](sicurezza/index.md)
+1. **Nuovo personale:** inizia dalla sezione [Generali](generali/index.md)
+2. **Attività quotidiana in clinica:** consulta [Clinica](clinica/index.md)
+3. **Informazioni specifiche della tua sede:** vai a [Sede](sede/index.md)
+4. **Funzioni direzionali:** consulta [Corporate](corporate/index.md)
+
+---
 
 ## Aggiornamenti
 
@@ -82,7 +81,8 @@ Questo manuale viene aggiornato regolarmente. Verificare sempre di consultare la
 
 | Versione | Data | Modifiche |
 |----------|------|-----------|
-| 1.0 | [Data] | Prima pubblicazione |
+| 2.0 | Gennaio 2026 | Nuova struttura: Generali, Corporate, Clinica, Sede |
+| 1.0 | Gennaio 2026 | Prima pubblicazione |
 
 ---
 
