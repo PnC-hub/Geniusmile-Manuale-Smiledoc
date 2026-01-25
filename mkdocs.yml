@@ -210,6 +210,12 @@ nav:
   - Sede:
     - sede/index.md
 
+  - Sistema HR:
+    - sistema-hr/index.md
+    - sistema-hr/assistente-ai.md
+    - sistema-hr/formazione.md
+    - sistema-hr/documenti.md
+
 extra:
   social:
     - icon: fontawesome/solid/globe
