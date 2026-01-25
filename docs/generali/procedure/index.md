@@ -1,5 +1,9 @@
 # Procedure Generali
 
-Procedure operative comuni a tutti.
+Procedure operative comuni a tutti i collaboratori.
 
-*Contenuti in fase di definizione*
+## Documenti
+
+| Procedura | Descrizione |
+|-----------|-------------|
+| [Gestione Reclami](reclami.md) | Come gestire i reclami dei pazienti |

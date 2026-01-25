@@ -4,25 +4,33 @@ Questa sezione contiene i manuali, protocolli e procedure che riguardano **tutti
 
 ## Contenuti
 
-### Protocolli
-Regole e standard validi per tutta l'organizzazione.
+<div class="grid cards" markdown>
 
-[:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
+-   :material-shield-check:{ .lg .middle } **Protocolli**
 
-### Procedure
-Procedure operative comuni a tutti.
+    ---
 
-[:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
+    Regole e standard validi per tutta l'organizzazione.
 
-### Checklist
-Checklist di uso generale.
+    [:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
 
-[:octicons-arrow-right-24: Vai alle Checklist](checklist/index.md)
+-   :material-clipboard-list:{ .lg .middle } **Procedure**
 
-### Moduli
-Modulistica standard.
+    ---
 
-[:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+    Procedure operative comuni a tutti.
+
+    [:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
+
+-   :material-file-document:{ .lg .middle } **Moduli**
+
+    ---
+
+    Modulistica standard (Privacy e GDPR).
+
+    [:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+
+</div>
 
 ---
 

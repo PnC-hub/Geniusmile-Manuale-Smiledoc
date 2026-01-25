@@ -4,25 +4,41 @@ Questa sezione contiene i manuali, protocolli e procedure necessari per il **fun
 
 ## Contenuti
 
-### Protocolli
-Protocolli clinici, sanitari e operativi.
+<div class="grid cards" markdown>
 
-[:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
+-   :material-shield-check:{ .lg .middle } **Protocolli**
 
-### Procedure
-Procedure operative per la gestione quotidiana della clinica.
+    ---
 
-[:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
+    Sterilizzazione, igiene, emergenze, radiologia, sicurezza.
 
-### Checklist
-Checklist operative giornaliere, settimanali e periodiche.
+    [:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
 
-[:octicons-arrow-right-24: Vai alle Checklist](checklist/index.md)
+-   :material-clipboard-list:{ .lg .middle } **Procedure**
 
-### Moduli
-Modulistica clinica e sanitaria.
+    ---
 
-[:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+    Segreteria, comunicazione, magazzino.
+
+    [:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
+
+-   :material-checkbox-marked:{ .lg .middle } **Checklist**
+
+    ---
+
+    Apertura, chiusura, controlli periodici.
+
+    [:octicons-arrow-right-24: Vai alle Checklist](checklist/index.md)
+
+-   :material-file-document:{ .lg .middle } **Moduli**
+
+    ---
+
+    Consensi, anamnesi, documenti clinici.
+
+    [:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+
+</div>
 
 ---
 

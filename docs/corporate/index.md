@@ -4,25 +4,25 @@ Questa sezione contiene i manuali, protocolli e procedure che riguardano la **se
 
 ## Contenuti
 
-### Protocolli
-Protocolli strategici e direzionali.
+<div class="grid cards" markdown>
 
-[:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
+-   :material-shield-check:{ .lg .middle } **Protocolli**
 
-### Procedure
-Procedure amministrative e gestionali centrali.
+    ---
 
-[:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
+    Standard di qualità, KPI e miglioramento continuo.
 
-### Checklist
-Checklist per attività corporate.
+    [:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
 
-[:octicons-arrow-right-24: Vai alle Checklist](checklist/index.md)
+-   :material-clipboard-list:{ .lg .middle } **Procedure**
 
-### Moduli
-Modulistica corporate.
+    ---
 
-[:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+    Risorse umane, amministrazione e gestione centrale.
+
+    [:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
+
+</div>
 
 ---
 

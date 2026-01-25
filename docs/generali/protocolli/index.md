@@ -2,4 +2,8 @@
 
 Protocolli validi per tutta l'organizzazione.
 
-*Contenuti in fase di definizione*
+## Documenti
+
+| Protocollo | Descrizione |
+|------------|-------------|
+| [Igiene Mani](igiene-mani.md) | Procedura corretta per il lavaggio e la disinfezione delle mani |

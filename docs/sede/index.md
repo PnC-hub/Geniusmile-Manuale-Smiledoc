@@ -2,35 +2,24 @@
 
 Questa sezione contiene i manuali, protocolli e procedure **specifici per ogni singola sede**. Qui trovi le informazioni particolari che riguardano la tua sede di appartenenza.
 
-## Contenuti
+## Sedi Attive
 
-### Protocolli
-Protocolli specifici della sede.
-
-[:octicons-arrow-right-24: Vai ai Protocolli](protocolli/index.md)
-
-### Procedure
-Procedure operative specifiche della sede.
-
-[:octicons-arrow-right-24: Vai alle Procedure](procedure/index.md)
-
-### Checklist
-Checklist personalizzate per la sede.
-
-[:octicons-arrow-right-24: Vai alle Checklist](checklist/index.md)
-
-### Moduli
-Modulistica specifica della sede.
-
-[:octicons-arrow-right-24: Vai ai Moduli](moduli/index.md)
+| Sede | Indirizzo | Telefono |
+|------|-----------|----------|
+| **Monterotondo** | Via Monte Circeo 12, 00015 Monterotondo (RM) | 06 90623936 |
 
 ---
 
-## Sedi
+## Contenuti per Sede
 
-| Sede | Indirizzo | Riferimento |
-|------|-----------|-------------|
-| Monterotondo | Via Monte Circeo 12, 00015 Monterotondo (RM) | [Vai alla sede](monterotondo/index.md) |
+Ogni sede può avere documenti specifici:
+
+| Tipo | Descrizione |
+|------|-------------|
+| **Protocolli** | Protocolli specifici della sede |
+| **Procedure** | Procedure operative locali |
+| **Checklist** | Checklist personalizzate |
+| **Moduli** | Modulistica specifica |
 
 ---
 
@@ -40,3 +29,7 @@ Modulistica specifica della sede.
 |-------------|----------------|
 | Personale della specifica sede | Obbligatorio |
 | Coordinatore di sede | Obbligatorio |
+
+---
+
+*I contenuti specifici per sede verranno popolati in base alle esigenze di ogni singola struttura.*
