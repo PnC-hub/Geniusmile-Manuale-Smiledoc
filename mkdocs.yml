@@ -216,10 +216,19 @@ nav:
     - sistema-hr/formazione.md
     - sistema-hr/documenti.md
 
+  - Feedback:
+    - feedback/index.md
+
 extra:
   social:
     - icon: fontawesome/solid/globe
       link: https://smiledoc.it
   generator: false
+
+extra_css:
+  - assets/stylesheets/feedback.css
+
+extra_javascript:
+  - assets/javascripts/feedback.js
 
 copyright: "&copy; 2026 Smiledoc S.r.l. - Tutti i diritti riservati"
