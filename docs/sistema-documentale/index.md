@@ -1,7 +1,7 @@
 # Sistema di Controllo Documentale
 
 !!! warning "DOCUMENTO UFFICIALE"
-    Questo sistema di controllo documentale costituisce parte integrante del **Sistema di Gestione Qualità** di Smiledoc S.r.l. ed è conforme ai requisiti della norma UNI EN ISO 9001:2015.
+    Questo sistema di controllo documentale costituisce parte integrante del **Sistema di Gestione Qualità** di {{ clinic.legal_name }} ed è conforme ai requisiti della norma UNI EN ISO 9001:2015.
 
 ---
 

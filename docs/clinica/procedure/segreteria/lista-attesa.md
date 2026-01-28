@@ -85,7 +85,7 @@ CONTATTARE IL PAZIENTE
 
 ### Chiamata Telefonica
 
-> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello Studio Smiledoc. Si è liberato un appuntamento per [GIORNO] alle ore [ORA]. Le andrebbe bene?"
+> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello {{ clinic.full_name }}. Si è liberato un appuntamento per [GIORNO] alle ore [ORA]. Le andrebbe bene?"
 
 ### Possibili Risposte
 
@@ -99,7 +99,7 @@ CONTATTARE IL PAZIENTE
 ### Se Non Risponde
 
 1. Lasciare messaggio in segreteria
-2. Inviare SMS: "Studio Smiledoc: abbiamo disponibilità per [GIORNO] [ORA]. Interessato? Chiami 06 90623936"
+2. Inviare SMS: "{{ clinic.full_name }}: abbiamo disponibilità per [GIORNO] [ORA]. Interessato? Chiami {{ clinic.phone }}"
 3. Annotare tentativo
 4. Passare al paziente successivo
 5. Riprovare dopo se slot ancora libero

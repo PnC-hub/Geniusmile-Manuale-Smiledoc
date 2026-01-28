@@ -67,8 +67,8 @@ Per revocare il consenso alle comunicazioni di marketing:
 
 - Risponda "STOP" a qualsiasi SMS ricevuto
 - Clicchi sul link di disiscrizione presente nelle email
-- Contatti la segreteria al 06 90623936
-- Scriva a: privacy@smiledoc.it
+- Contatti la segreteria al {{ clinic.phone }}
+- Scriva a: {{ clinic.email_privacy }}
 
 ---
 

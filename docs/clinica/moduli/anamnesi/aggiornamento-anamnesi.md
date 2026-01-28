@@ -4,7 +4,7 @@
 
 ### SCHEDA AGGIORNAMENTO ANAMNESTICO
 
-**STUDIO DENTISTICO SMILEDOC**
+**{{ clinic.full_name }}**
 
 ---
 

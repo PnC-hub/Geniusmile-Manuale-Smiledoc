@@ -6,7 +6,7 @@ Questa sezione contiene i manuali, protocolli e procedure **specifici per ogni s
 
 | Sede | Indirizzo | Telefono |
 |------|-----------|----------|
-| **Monterotondo** | Via Monte Circeo 12, 00015 Monterotondo (RM) | 06 90623936 |
+| **Monterotondo** | {{ clinic.full_address }} | {{ clinic.phone }} |
 
 ---
 

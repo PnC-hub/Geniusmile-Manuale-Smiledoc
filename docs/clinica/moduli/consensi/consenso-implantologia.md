@@ -15,9 +15,9 @@ Questo modulo è utilizzato per interventi di implantologia:
 
 ### CONSENSO INFORMATO PER IMPLANTOLOGIA
 
-**STUDIO DENTISTICO SMILEDOC**
-Via Monte Circeo 12, 00015 Monterotondo (RM)
-Tel. 06 90623936
+**{{ clinic.full_name }}**
+{{ clinic.full_address }}
+Tel. {{ clinic.phone }}
 
 ---
 

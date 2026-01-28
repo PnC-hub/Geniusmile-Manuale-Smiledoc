@@ -1,7 +1,7 @@
-# Manuale Operativo Smiledoc
+# Manuale Operativo {{ clinic.name }}
 
 !!! danger "AVVISO LEGALE IMPORTANTE"
-    Questo Manuale Operativo costituisce **documento ufficiale** di Smiledoc S.r.l. La consultazione e la presa visione dei contenuti creano un **obbligo contrattuale** per tutto il personale. Il mancato rispetto delle procedure documentate può costituire motivo di provvedimento disciplinare.
+    Questo Manuale Operativo costituisce **documento ufficiale** di {{ clinic.legal_name }} La consultazione e la presa visione dei contenuti creano un **obbligo contrattuale** per tutto il personale. Il mancato rispetto delle procedure documentate può costituire motivo di provvedimento disciplinare.
 
     **Prima di procedere**, ogni collaboratore deve:
 
@@ -127,4 +127,4 @@ Questo manuale viene aggiornato regolarmente. Verificare sempre di consultare la
 
 ---
 
-**Smiledoc S.r.l.** | Via Monte Circeo 12, 00015 Monterotondo (RM) | Sistema Documentale Conforme ISO 9001:2015
+**{{ clinic.legal_name }}** | {{ clinic.full_address }} | Sistema Documentale Conforme ISO 9001:2015

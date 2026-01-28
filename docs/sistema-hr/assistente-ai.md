@@ -1,6 +1,6 @@
 # Assistente AI HR
 
-L'assistente AI di Smiledoc è un sistema di supporto basato su intelligenza artificiale che aiuta i dipendenti a trovare rapidamente informazioni su procedure, normative e documentazione aziendale.
+L'assistente AI di {{ clinic.name }} è un sistema di supporto basato su intelligenza artificiale che aiuta i dipendenti a trovare rapidamente informazioni su procedure, normative e documentazione aziendale.
 
 ## Come Funziona
 

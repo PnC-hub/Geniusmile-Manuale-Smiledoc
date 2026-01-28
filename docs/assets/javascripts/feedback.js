@@ -1,5 +1,5 @@
 /**
- * Feedback System - Manuale Smiledoc
+ * Feedback System - Manuale {{ clinic.name }}
  * Sistema di raccolta feedback per migliorare il manuale
  */
 
@@ -8,7 +8,6 @@
 
     // Configurazione API
     const API_BASE = 'https://api-test.geniusmile.com/api/v1';
-    const API_KEY = 'sk_smiledoc_2025_xK9mP3nQ7rT2wY5v';
 
     // Stato
     let isModalOpen = false;
@@ -220,8 +219,7 @@
         try {
             const headers = {
                 'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'X-API-Key': API_KEY
+                'Accept': 'application/json'
             };
 
             // Aggiungi token auth se presente

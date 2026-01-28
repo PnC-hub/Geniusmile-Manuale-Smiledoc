@@ -27,7 +27,7 @@ Definire le procedure da seguire in caso di emergenza per garantire la sicurezza
 | Polizia | **113** |
 
 **Indirizzo Studio:**
-Via Monte Circeo 12, 00015 Monterotondo (RM)
+{{ clinic.full_address }}
 
 ---
 

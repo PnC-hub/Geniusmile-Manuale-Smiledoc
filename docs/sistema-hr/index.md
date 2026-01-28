@@ -1,6 +1,6 @@
-# Sistema HR Smiledoc
+# Sistema HR {{ clinic.name }}
 
-Il **Sistema HR Smiledoc** è una piattaforma integrata per la gestione delle risorse umane, progettata per digitalizzare e automatizzare i processi HR dello studio odontoiatrico.
+Il **Sistema HR {{ clinic.name }}** è una piattaforma integrata per la gestione delle risorse umane, progettata per digitalizzare e automatizzare i processi HR dello studio odontoiatrico.
 
 ## Funzionalità Principali
 

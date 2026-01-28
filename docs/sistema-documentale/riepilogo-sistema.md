@@ -7,7 +7,7 @@
 ---
 
 !!! success "SISTEMA CONFORME ISO 9001:2015"
-    Il Sistema Documentale di Smiledoc S.r.l. è progettato per garantire la **validità legale** di tutti i documenti e la **non contestabilità** delle procedure aziendali da parte del personale.
+    Il Sistema Documentale di {{ clinic.legal_name }} è progettato per garantire la **validità legale** di tutti i documenti e la **non contestabilità** delle procedure aziendali da parte del personale.
 
 ---
 
@@ -276,7 +276,7 @@ sequenceDiagram
 
 | Ruolo | Responsabilità | Contatto |
 |-------|----------------|----------|
-| Direzione Generale | Approvazione finale | direzione@smiledoc.it |
+| Direzione Generale | Approvazione finale | {{ clinic.email_direzione }} |
 | Responsabile Qualità | Gestione sistema | qualita@smiledoc.it |
 | Coordinatore Sede | Prese visione | coordinatore@smiledoc.it |
 

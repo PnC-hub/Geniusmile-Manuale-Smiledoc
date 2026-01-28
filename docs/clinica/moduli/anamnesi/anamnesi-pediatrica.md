@@ -4,7 +4,7 @@
 
 ### SCHEDA ANAMNESTICA PEDIATRICA
 
-**STUDIO DENTISTICO SMILEDOC**
+**{{ clinic.full_name }}**
 
 ---
 

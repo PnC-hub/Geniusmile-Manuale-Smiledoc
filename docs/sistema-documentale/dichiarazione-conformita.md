@@ -7,14 +7,14 @@
 ---
 
 !!! danger "DOCUMENTO UFFICIALE"
-    La presente dichiarazione attesta la validità legale del Sistema Documentale di Smiledoc S.r.l. e costituisce documento ufficiale opponibile in sede giudiziale.
+    La presente dichiarazione attesta la validità legale del Sistema Documentale di {{ clinic.legal_name }} e costituisce documento ufficiale opponibile in sede giudiziale.
 
 ---
 
 ## Dichiarazione
 
-**Smiledoc S.r.l.**
-Con sede legale in Via Monte Circeo 12, 00015 Monterotondo (RM)
+**{{ clinic.legal_name }}**
+Con sede legale in {{ clinic.full_address }}
 
 nella persona del Legale Rappresentante
 
@@ -186,10 +186,10 @@ I documenti e i log di sistema sono conservati:
 
 **Dichiarazione resa da:**
 
-Smiledoc S.r.l.
+{{ clinic.legal_name }}
 Il Legale Rappresentante
 
-Luogo: Monterotondo (RM)
+Luogo: {{ clinic.city }} ({{ clinic.province }})
 
 Data: 25 Gennaio 2026
 

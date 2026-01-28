@@ -16,9 +16,9 @@ Questo modulo è utilizzato per i trattamenti odontoiatrici di routine:
 
 ### CONSENSO INFORMATO AL TRATTAMENTO ODONTOIATRICO
 
-**STUDIO DENTISTICO SMILEDOC**
-Via Monte Circeo 12, 00015 Monterotondo (RM)
-Tel. 06 90623936
+**{{ clinic.full_name }}**
+{{ clinic.full_address }}
+Tel. {{ clinic.phone }}
 
 ---
 

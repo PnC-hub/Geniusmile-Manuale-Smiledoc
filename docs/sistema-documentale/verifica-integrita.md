@@ -125,7 +125,7 @@ In caso di contestazione legale, è possibile:
 | Informazione | Valore |
 |--------------|--------|
 | **Piattaforma** | GitHub |
-| **Repository** | Geniusmile-Manuale-Smiledoc |
+| **Repository** | Geniusmile-Manuale-{{ clinic.name }} |
 | **Branch principale** | main |
 | **Accesso** | Privato, solo personale autorizzato |
 

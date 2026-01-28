@@ -17,9 +17,9 @@ Questo modulo è utilizzato per interventi di chirurgia orale:
 
 ### CONSENSO INFORMATO PER CHIRURGIA ORALE
 
-**STUDIO DENTISTICO SMILEDOC**
-Via Monte Circeo 12, 00015 Monterotondo (RM)
-Tel. 06 90623936
+**{{ clinic.full_name }}**
+{{ clinic.full_address }}
+Tel. {{ clinic.phone }}
 
 ---
 
@@ -205,4 +205,4 @@ Contattare lo studio se:
 - Difficoltà a deglutire o respirare
 - Dolore non controllato dai farmaci
 
-**Recapito urgenze:** 06 90623936
+**Recapito urgenze:** {{ clinic.phone }}

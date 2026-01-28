@@ -11,9 +11,9 @@ Garantire continuità di cura e mantenere alto il livello di soddisfazione del p
 
 ```
 Gentile [Nome], le ricordiamo l'appuntamento presso
-Studio Smiledoc il [data] alle ore [ora].
+{{ clinic.full_name }} il [data] alle ore [ora].
 Per confermare risponda SI.
-Per modificare chiami 06 90623936
+Per modificare chiami {{ clinic.phone }}
 ```
 
 **Telefonata** (per appuntamenti importanti):

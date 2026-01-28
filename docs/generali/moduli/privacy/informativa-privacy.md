@@ -17,11 +17,11 @@ ai sensi del Regolamento UE 2016/679 (GDPR), La informiamo che i Suoi dati perso
 
 Il Titolare del trattamento è:
 
-**Smiledoc S.r.l.**
-Via Monte Circeo 12, 00015 Monterotondo (RM)
+**{{ clinic.legal_name }}**
+{{ clinic.full_address }}
 P.IVA: [Inserire]
-Tel: 06 90623936
-Email: info@smiledoc.it
+Tel: {{ clinic.phone }}
+Email: {{ clinic.email }}
 PEC: [Inserire]
 
 ---
@@ -102,8 +102,8 @@ Lei ha diritto di:
 - **Revoca:** revocare il consenso in qualsiasi momento
 
 Per esercitare i Suoi diritti, può contattarci a:
-- Email: privacy@smiledoc.it
-- Indirizzo: Via Monte Circeo 12, 00015 Monterotondo (RM)
+- Email: {{ clinic.email_privacy }}
+- Indirizzo: {{ clinic.full_address }}
 
 Ha inoltre diritto di proporre reclamo al **Garante per la Protezione dei Dati Personali** (www.garanteprivacy.it).
 

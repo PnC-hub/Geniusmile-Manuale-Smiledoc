@@ -52,7 +52,7 @@ Gestire proattivamente la reputazione online dello studio attraverso il monitora
 **Via SMS (post trattamento):**
 
 ```
-Studio Smiledoc: Grazie per la fiducia!
+{{ clinic.full_name }}: Grazie per la fiducia!
 Se è soddisfatto, ci farebbe piacere una sua
 recensione: [link Google]
 Grazie!
@@ -77,7 +77,7 @@ ad altri pazienti:
 La ringraziamo per il tempo che vorrà dedicarci.
 
 Cordiali saluti
-Studio Dentistico Smiledoc
+{{ clinic.full_name }}
 ```
 
 ### Chi NON Sollecitare

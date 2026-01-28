@@ -35,7 +35,7 @@ Garantire il benessere del paziente dopo i trattamenti e monitorare gli esiti cl
 **Quando:** 24-48 ore dopo l'intervento
 
 **Script:**
-> "Buongiorno Signor/a [Nome], sono [Nome] dello Studio Smiledoc. La chiamo per sapere come sta dopo l'intervento di [tipo]. Come si sente? Ha avuto dolore? Gonfiore? Ha potuto seguire le indicazioni che le abbiamo dato?"
+> "Buongiorno Signor/a [Nome], sono [Nome] dello {{ clinic.full_name }}. La chiamo per sapere come sta dopo l'intervento di [tipo]. Come si sente? Ha avuto dolore? Gonfiore? Ha potuto seguire le indicazioni che le abbiamo dato?"
 
 **Checklist domande:**
 
@@ -112,7 +112,7 @@ Garantire il benessere del paziente dopo i trattamenti e monitorare gli esiti cl
 
 ### Script Richiamo Igiene
 
-> "Buongiorno Signor/a [Nome], sono [Nome] dello Studio Smiledoc. La contatto perché sono passati [X mesi] dalla sua ultima seduta di igiene. È importante per la salute dei suoi denti mantenere controlli regolari. Quando preferisce fissare il prossimo appuntamento?"
+> "Buongiorno Signor/a [Nome], sono [Nome] dello {{ clinic.full_name }}. La contatto perché sono passati [X mesi] dalla sua ultima seduta di igiene. È importante per la salute dei suoi denti mantenere controlli regolari. Quando preferisce fissare il prossimo appuntamento?"
 
 ## Monitoraggio e KPI
 

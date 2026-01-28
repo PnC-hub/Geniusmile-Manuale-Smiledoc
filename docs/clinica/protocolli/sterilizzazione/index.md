@@ -4,7 +4,7 @@ La sterilizzazione è un processo fondamentale per prevenire le infezioni crocia
 
 ## Principi Generali
 
-Lo Studio Smiledoc adotta il principio della **catena di sterilità**:
+Lo {{ clinic.full_name }} adotta il principio della **catena di sterilità**:
 
 1. **Decontaminazione** - Rimozione dei residui organici
 2. **Lavaggio** - Pulizia meccanica o manuale

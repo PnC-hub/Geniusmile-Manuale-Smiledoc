@@ -56,10 +56,10 @@ FATTURA
 
 | Campo | Valore |
 |-------|--------|
-| Ragione Sociale | Smiledoc S.r.l. |
+| Ragione Sociale | {{ clinic.legal_name }} |
 | P.IVA | [Inserire] |
 | Codice Fiscale | [Inserire] |
-| Indirizzo | Via Monte Circeo 12, 00015 Monterotondo (RM) |
+| Indirizzo | {{ clinic.full_address }} |
 
 ### Sistema Tessera Sanitaria
 

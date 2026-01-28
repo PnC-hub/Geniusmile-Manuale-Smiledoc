@@ -28,30 +28,30 @@ Ridurre il tasso di no-show attraverso un sistema efficace di promemoria e confe
 ### Messaggio di Conferma (al momento)
 
 ```
-Studio Smiledoc: Appuntamento confermato per [DATA] alle ore [ORA].
-Via Monte Circeo 12, Monterotondo.
-Info: 06 90623936
+{{ clinic.full_name }}: Appuntamento confermato per [DATA] alle ore [ORA].
+{{ clinic.address }}, Monterotondo.
+Info: {{ clinic.phone }}
 ```
 
 ### Promemoria 48h Prima
 
 ```
-Studio Smiledoc: Le ricordiamo l'appuntamento di dopodomani [DATA] alle ore [ORA].
-Per disdire/modificare: 06 90623936
+{{ clinic.full_name }}: Le ricordiamo l'appuntamento di dopodomani [DATA] alle ore [ORA].
+Per disdire/modificare: {{ clinic.phone }}
 ```
 
 ### Richiesta Conferma 24h Prima
 
 ```
-Studio Smiledoc: Domani [DATA] ore [ORA] ha appuntamento con noi.
+{{ clinic.full_name }}: Domani [DATA] ore [ORA] ha appuntamento con noi.
 Conferma rispondendo SI.
-Per disdire: 06 90623936
+Per disdire: {{ clinic.phone }}
 ```
 
 ### Promemoria Finale (2h prima)
 
 ```
-Studio Smiledoc: Tra 2 ore l'aspettiamo per il suo appuntamento.
+{{ clinic.full_name }}: Tra 2 ore l'aspettiamo per il suo appuntamento.
 Vi ricordiamo di portare [eventuale documentazione].
 ```
 
@@ -84,7 +84,7 @@ Vi ricordiamo di portare [eventuale documentazione].
 
 ### Script Telefonico
 
-> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello Studio Smiledoc. La chiamo per confermare il suo appuntamento di domani alle ore [ORA]. Conferma? Perfetto, le ricordo di [eventuali istruzioni]. A domani!"
+> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello {{ clinic.full_name }}. La chiamo per confermare il suo appuntamento di domani alle ore [ORA]. Conferma? Perfetto, le ricordo di [eventuali istruzioni]. A domani!"
 
 ### Informazioni Aggiuntive
 
@@ -194,7 +194,7 @@ Verificare:
 
 | Parametro | Valore |
 |-----------|--------|
-| Mittente | Smiledoc |
+| Mittente | {{ clinic.name }} |
 | Orario invio | 09:00 - 20:00 |
 | Giorni invio | Lun-Sab |
 | Retry fallimento | 2 tentativi |

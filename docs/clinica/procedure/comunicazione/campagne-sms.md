@@ -56,7 +56,7 @@ Utilizzare gli SMS come strumento di comunicazione efficace per mantenere il con
 ### Regole di Base
 
 - **Lunghezza:** Max 160 caratteri (1 SMS)
-- **Mittente:** "Smiledoc" (riconoscibile)
+- **Mittente:** "{{ clinic.name }}" (riconoscibile)
 - **Call to action:** Chiara e unica
 - **Contatto:** Sempre presente
 - **Tono:** Professionale ma cordiale
@@ -74,23 +74,23 @@ Utilizzare gli SMS come strumento di comunicazione efficace per mantenere il con
 
 **Promozione:**
 ```
-Smiledoc: Sorriso splendente per l'estate!
+{{ clinic.name }}: Sorriso splendente per l'estate!
 Sbiancamento professionale a € 199 (invece di € 299).
-Prenota entro il 30/6: 06 90623936
+Prenota entro il 30/6: {{ clinic.phone }}
 ```
 
 **Nuovo servizio:**
 ```
-Smiledoc: Novità! Ora offriamo ortodonzia invisibile
+{{ clinic.name }}: Novità! Ora offriamo ortodonzia invisibile
 con Invisalign. Prima consulenza gratuita.
-Info: 06 90623936
+Info: {{ clinic.phone }}
 ```
 
 **Auguri:**
 ```
-Smiledoc: Buon Natale! Ti auguriamo feste serene
+{{ clinic.name }}: Buon Natale! Ti auguriamo feste serene
 e un 2026 pieno di sorrisi.
-Il tuo Studio Dentistico Smiledoc
+Il tuo {{ clinic.full_name }}
 ```
 
 ## Segmentazione Target

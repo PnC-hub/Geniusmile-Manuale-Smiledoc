@@ -21,9 +21,9 @@ Gestire in modo efficace ed etico il recupero degli importi non pagati, mantenen
 
 **Template SMS:**
 ```
-Studio Smiledoc: Gentile paziente, le ricordiamo
+{{ clinic.full_name }}: Gentile paziente, le ricordiamo
 che risulta un saldo di € [importo] scaduto il
-[data]. Per info: 06 90623936
+[data]. Per info: {{ clinic.phone }}
 ```
 
 **Template Email:**
@@ -39,7 +39,7 @@ La preghiamo di regolarizzare la posizione al più
 presto o di contattarci per eventuali chiarimenti.
 
 Cordiali saluti
-Studio Smiledoc
+{{ clinic.full_name }}
 ```
 
 ### Fase 2: Sollecito Telefonico (16-30 giorni)
@@ -47,7 +47,7 @@ Studio Smiledoc
 **Azione:** Chiamata telefonica
 
 **Script:**
-> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello Studio Smiledoc. La contatto per un promemoria: risulta un saldo di € [importo] relativo alle cure effettuate. Come possiamo risolvere?"
+> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello {{ clinic.full_name }}. La contatto per un promemoria: risulta un saldo di € [importo] relativo alle cure effettuate. Come possiamo risolvere?"
 
 **Possibili Esiti:**
 

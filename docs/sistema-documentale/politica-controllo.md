@@ -8,7 +8,7 @@
 
 ## 1. Scopo e Campo di Applicazione
 
-La presente politica definisce le regole per la **creazione, approvazione, distribuzione, revisione e archiviazione** di tutti i documenti del Sistema di Gestione Qualità di Smiledoc S.r.l.
+La presente politica definisce le regole per la **creazione, approvazione, distribuzione, revisione e archiviazione** di tutti i documenti del Sistema di Gestione Qualità di {{ clinic.legal_name }}
 
 Si applica a:
 
@@ -235,7 +235,7 @@ Il presente sistema documentale, unitamente al registro delle prese visione, cos
 
 ---
 
-**Approvato da:** Direzione Generale Smiledoc S.r.l.
+**Approvato da:** Direzione Generale {{ clinic.legal_name }}
 
 **Data:** 25 Gennaio 2026
 

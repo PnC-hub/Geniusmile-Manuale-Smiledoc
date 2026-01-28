@@ -8,7 +8,7 @@ Trattamenti endodontici (devitalizzazioni) e relativi interventi.
 
 ### CONSENSO INFORMATO PER TRATTAMENTO ENDODONTICO
 
-**STUDIO DENTISTICO SMILEDOC**
+**{{ clinic.full_name }}**
 
 ---
 

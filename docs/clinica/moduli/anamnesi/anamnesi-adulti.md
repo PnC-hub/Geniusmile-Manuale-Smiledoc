@@ -4,8 +4,8 @@
 
 ### SCHEDA ANAMNESTICA
 
-**STUDIO DENTISTICO SMILEDOC**
-Via Monte Circeo 12, 00015 Monterotondo (RM)
+**{{ clinic.full_name }}**
+{{ clinic.full_address }}
 
 ---
 

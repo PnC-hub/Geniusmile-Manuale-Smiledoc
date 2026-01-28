@@ -76,7 +76,7 @@ Rimanere libero
 
 ### Contatto Lista d'Attesa
 
-> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello Studio Smiledoc. Si è liberato un posto per [GIORNO] alle ore [ORA]. Le farebbe comodo? Perfetto, la segno subito!"
+> "Buongiorno Sig./Sig.ra [Nome], sono [Nome] dello {{ clinic.full_name }}. Si è liberato un posto per [GIORNO] alle ore [ORA]. Le farebbe comodo? Perfetto, la segno subito!"
 
 ## Gestione No-Show
 

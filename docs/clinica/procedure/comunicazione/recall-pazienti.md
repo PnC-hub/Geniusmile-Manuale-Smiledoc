@@ -40,16 +40,16 @@ Garantire la continuità delle cure richiamando sistematicamente i pazienti per 
 
 **Messaggio tipo Igiene:**
 ```
-Studio Smiledoc: Gentile [Nome], sono passati 6 mesi
+{{ clinic.full_name }}: Gentile [Nome], sono passati 6 mesi
 dalla sua ultima igiene professionale. La prevenzione
-è importante! Prenoti al 06 90623936 o risponda OK
+è importante! Prenoti al {{ clinic.phone }} o risponda OK
 per essere richiamato.
 ```
 
 **Messaggio tipo Controllo:**
 ```
-Studio Smiledoc: Gentile [Nome], è tempo del suo
-controllo periodico. Prenoti al 06 90623936.
+{{ clinic.full_name }}: Gentile [Nome], è tempo del suo
+controllo periodico. Prenoti al {{ clinic.phone }}.
 La aspettiamo!
 ```
 
@@ -58,10 +58,10 @@ La aspettiamo!
 **Quando:** 7 giorni dopo il primo SMS senza risposta
 
 ```
-Studio Smiledoc: Gentile [Nome], non abbiamo ancora
+{{ clinic.full_name }}: Gentile [Nome], non abbiamo ancora
 ricevuto sua risposta per l'appuntamento di controllo.
 La richiamiamo nei prossimi giorni.
-Per prenotare: 06 90623936
+Per prenotare: {{ clinic.phone }}
 ```
 
 ### Step 3: Terzo Contatto - Telefonata
@@ -70,7 +70,7 @@ Per prenotare: 06 90623936
 
 **Script telefonico:**
 
-> "Buongiorno Sig./Sig.ra [Cognome], sono [Nome] dello Studio Dentistico Smiledoc. La chiamo perché sono passati [X] mesi dalla sua ultima [igiene/visita] e volevamo invitarla per un controllo. La prevenzione è molto importante per mantenere la salute della bocca. Ha disponibilità nelle prossime settimane?"
+> "Buongiorno Sig./Sig.ra [Cognome], sono [Nome] dello {{ clinic.full_name }}. La chiamo perché sono passati [X] mesi dalla sua ultima [igiene/visita] e volevamo invitarla per un controllo. La prevenzione è molto importante per mantenere la salute della bocca. Ha disponibilità nelle prossime settimane?"
 
 **Se risponde:**
 - Proporre 2-3 date/orari
@@ -87,7 +87,7 @@ Per prenotare: 06 90623936
 
 **Script:**
 
-> "Buongiorno, sono ancora [Nome] dello Studio Smiledoc. Abbiamo provato a contattarla nei giorni scorsi per invitarla a un controllo. Ci farebbe piacere rivederla. Quando ha un momento ci richiami al 06 90623936. Grazie!"
+> "Buongiorno, sono ancora [Nome] dello {{ clinic.full_name }}. Abbiamo provato a contattarla nei giorni scorsi per invitarla a un controllo. Ci farebbe piacere rivederla. Quando ha un momento ci richiami al {{ clinic.phone }}. Grazie!"
 
 ### Step 5: Chiusura Ciclo
 
@@ -165,36 +165,36 @@ PRENOTA     STEP 2: SMS SOLLECITO
 ### SMS Recall Igiene
 
 ```
-Studio Smiledoc: Gentile [Nome], sono passati 6 mesi
+{{ clinic.full_name }}: Gentile [Nome], sono passati 6 mesi
 dalla sua ultima igiene. È tempo di un controllo!
-Prenoti al 06 90623936 o risponda a questo messaggio.
+Prenoti al {{ clinic.phone }} o risponda a questo messaggio.
 ```
 
 ### SMS Recall Parodontale
 
 ```
-Studio Smiledoc: Gentile [Nome], è tempo del suo
+{{ clinic.full_name }}: Gentile [Nome], è tempo del suo
 appuntamento di mantenimento parodontale.
 La regolarità è fondamentale per la salute delle
-sue gengive. Prenoti al 06 90623936.
+sue gengive. Prenoti al {{ clinic.phone }}.
 ```
 
 ### SMS Recall Implantare
 
 ```
-Studio Smiledoc: Gentile [Nome], è passato tempo
+{{ clinic.full_name }}: Gentile [Nome], è passato tempo
 dall'ultimo controllo dei suoi impianti.
 La manutenzione regolare è importante!
-Prenoti al 06 90623936.
+Prenoti al {{ clinic.phone }}.
 ```
 
 ### SMS Preventivo in Sospeso
 
 ```
-Studio Smiledoc: Gentile [Nome], abbiamo notato
+{{ clinic.full_name }}: Gentile [Nome], abbiamo notato
 che il piano di trattamento discusso non è stato
 ancora avviato. Restiamo a disposizione per
-chiarimenti. Ci chiami al 06 90623936.
+chiarimenti. Ci chiami al {{ clinic.phone }}.
 ```
 
 ### Email Recall Completa
@@ -213,8 +213,8 @@ prima che diventino più seri e costosi da trattare.
 
 La invitiamo a contattarci per fissare un appuntamento:
 
-📞 06 90623936
-📧 info@smiledoc.it
+📞 {{ clinic.phone }}
+📧 {{ clinic.email }}
 
 Orari segreteria:
 Lun-Ven: 09:00-13:00 / 14:30-19:30
@@ -222,8 +222,8 @@ Lun-Ven: 09:00-13:00 / 14:30-19:30
 La aspettiamo!
 
 Cordiali saluti,
-Studio Dentistico Smiledoc
-Via Monte Circeo 12, Monterotondo
+{{ clinic.full_name }}
+{{ clinic.address }}, Monterotondo
 ```
 
 ## Gestione delle Risposte
@@ -282,15 +282,15 @@ Pazienti senza appuntamenti da oltre **18 mesi**.
 ### Messaggio Recupero
 
 ```
-Studio Smiledoc: Gentile [Nome], è passato molto tempo
+{{ clinic.full_name }}: Gentile [Nome], è passato molto tempo
 dalla sua ultima visita e ci farebbe piacere rivederla.
 Le offriamo una visita di controllo gratuita.
-Prenoti al 06 90623936. La aspettiamo!
+Prenoti al {{ clinic.phone }}. La aspettiamo!
 ```
 
 ### Script Telefonico Recupero
 
-> "Buongiorno Sig./Sig.ra [Cognome], sono [Nome] dello Studio Smiledoc. È passato un po' di tempo dalla sua ultima visita e volevamo sapere come sta. Ci farebbe molto piacere rivederla, anche solo per un controllo. In questo periodo offriamo la visita di controllo gratuita per i nostri pazienti storici. Posso proporle un appuntamento?"
+> "Buongiorno Sig./Sig.ra [Cognome], sono [Nome] dello {{ clinic.full_name }}. È passato un po' di tempo dalla sua ultima visita e volevamo sapere come sta. Ci farebbe molto piacere rivederla, anche solo per un controllo. In questo periodo offriamo la visita di controllo gratuita per i nostri pazienti storici. Posso proporle un appuntamento?"
 
 ## Monitoraggio e KPI
 

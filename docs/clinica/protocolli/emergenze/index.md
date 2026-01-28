@@ -7,7 +7,7 @@ La gestione delle emergenze mediche in studio odontoiatrico richiede preparazion
 !!! danger "Numeri di Emergenza"
     **118** - Emergenza Sanitaria
 
-    **Indirizzo Studio:** Via Monte Circeo 12, Monterotondo (RM)
+    **Indirizzo Studio:** {{ clinic.full_address }}
 
 ### Catena di Sopravvivenza
 

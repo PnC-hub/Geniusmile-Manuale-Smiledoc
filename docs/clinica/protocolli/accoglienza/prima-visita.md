@@ -35,10 +35,10 @@ TELEFONICO  →  IN STUDIO  →   CLINICA    →   E PIANO     →   E FOLLOW-UP
 
 **SMS di Conferma:**
 ```
-Studio Smiledoc: Gentile [Nome], le confermiamo l'appuntamento
+{{ clinic.full_name }}: Gentile [Nome], le confermiamo l'appuntamento
 per la prima visita domani [data] alle [ora].
 Si ricordi di portare tessera sanitaria e eventuali referti.
-Via Monte Circeo 12, Monterotondo. Info: 06 90623936
+{{ clinic.address }}, Monterotondo. Info: {{ clinic.phone }}
 ```
 
 ### Preparazione Documentazione
@@ -70,7 +70,7 @@ Preparare in cartellina dedicata:
 
 **Script di accoglienza:**
 
-> "Buongiorno! Benvenuto allo Studio Dentistico Smiledoc. Sono [Nome]. Lei deve essere [Nome paziente], giusto? Si accomodi pure, siamo felici di averla qui."
+> "Buongiorno! Benvenuto allo {{ clinic.full_name }}. Sono [Nome]. Lei deve essere [Nome paziente], giusto? Si accomodi pure, siamo felici di averla qui."
 
 **Sequenza operativa:**
 
@@ -281,8 +281,8 @@ Se necessari (RX, foto intraorali):
 
 **SMS di ringraziamento:**
 ```
-Studio Smiledoc: Gentile [Nome], grazie per la visita di oggi.
-Per qualsiasi domanda siamo a disposizione al 06 90623936.
+{{ clinic.full_name }}: Gentile [Nome], grazie per la visita di oggi.
+Per qualsiasi domanda siamo a disposizione al {{ clinic.phone }}.
 A presto!
 ```
 

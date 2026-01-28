@@ -86,7 +86,7 @@ Autorizzo la comunicazione dei miei dati sanitari a:
 Il consenso può essere revocato in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca.
 
 Per revocare il consenso, contattare:
-- Email: privacy@smiledoc.it
+- Email: {{ clinic.email_privacy }}
 - Oppure compilare il modulo di revoca disponibile in segreteria
 
 ---

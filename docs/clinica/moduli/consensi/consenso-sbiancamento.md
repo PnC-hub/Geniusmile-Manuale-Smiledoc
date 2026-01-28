@@ -8,7 +8,7 @@ Trattamenti di sbiancamento dentale professionale.
 
 ### CONSENSO INFORMATO PER SBIANCAMENTO DENTALE
 
-**STUDIO DENTISTICO SMILEDOC**
+**{{ clinic.full_name }}**
 
 ---
 

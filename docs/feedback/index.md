@@ -234,7 +234,6 @@ Questa pagina mostra tutti i feedback e i contributi inviati dagli utenti per mi
 <script>
 (function() {
     const API_BASE = 'https://api-test.geniusmile.com/api/v1';
-    const API_KEY = 'sk_smiledoc_2025_xK9mP3nQ7rT2wY5v';
 
     let currentFilters = {
         stato: '',
@@ -251,7 +250,6 @@ Questa pagina mostra tutti i feedback e i contributi inviati dagli utenti per mi
         try {
             const response = await fetch(`${API_BASE}/manuale/feedback/stats`, {
                 headers: {
-                    'X-API-Key': API_KEY,
                     'Accept': 'application/json'
                 }
             });
@@ -275,7 +273,6 @@ Questa pagina mostra tutti i feedback e i contributi inviati dagli utenti per mi
 
             const response = await fetch(`${API_BASE}/manuale/feedback?${params}`, {
                 headers: {
-                    'X-API-Key': API_KEY,
                     'Accept': 'application/json'
                 }
             });

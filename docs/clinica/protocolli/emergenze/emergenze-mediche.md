@@ -188,9 +188,9 @@ EMERGENZA RILEVATA
 
 !!! info "Checklist Chiamata"
 
-    1. **Chi chiama:** "Sono [nome] dello Studio Dentistico Smiledoc"
+    1. **Chi chiama:** "Sono [nome] dello {{ clinic.full_name }}"
     2. **Cosa è successo:** "Ho un paziente con [sintomo/condizione]"
-    3. **Dove:** "Via Monte Circeo 12, Monterotondo"
+    3. **Dove:** "{{ clinic.address }}, Monterotondo"
     4. **Condizioni:** "Il paziente è [cosciente/incosciente], [respira/non respira]"
     5. **Confermare:** "Ho capito, restiamo in linea/attendiamo i soccorsi"
 

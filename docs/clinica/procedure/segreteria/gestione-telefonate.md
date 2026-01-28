@@ -16,7 +16,7 @@ Garantire una comunicazione telefonica professionale, efficiente e orientata all
 
 ### Script di Apertura
 
-> "Studio Dentistico Smiledoc, buongiorno/buonasera. Sono [Nome], come posso aiutarla?"
+> "{{ clinic.full_name }}, buongiorno/buonasera. Sono [Nome], come posso aiutarla?"
 
 ### Elementi Essenziali
 
@@ -115,7 +115,7 @@ Vedi: [Recall Pazienti](../comunicazione/recall-pazienti.md)
 
 **Script tipo:**
 
-> "Buongiorno, sono [Nome] dello Studio Dentistico Smiledoc. Parlo con il/la Sig./Sig.ra [Cognome]? La chiamo per..."
+> "Buongiorno, sono [Nome] dello {{ clinic.full_name }}. Parlo con il/la Sig./Sig.ra [Cognome]? La chiamo per..."
 
 ## Gestione Chiamate Multiple
 
@@ -147,7 +147,7 @@ Se non si riesce a rispondere:
 
 ### Messaggio Segreteria
 
-> "Benvenuto allo Studio Dentistico Smiledoc. I nostri orari sono dal lunedì al venerdì dalle 9 alle 13 e dalle 14:30 alle 19:30. Lasci un messaggio con nome e numero di telefono e la richiameremo al più presto. Grazie."
+> "Benvenuto allo {{ clinic.full_name }}. I nostri orari sono dal lunedì al venerdì dalle 9 alle 13 e dalle 14:30 alle 19:30. Lasci un messaggio con nome e numero di telefono e la richiameremo al più presto. Grazie."
 
 ### Gestione Messaggi
 

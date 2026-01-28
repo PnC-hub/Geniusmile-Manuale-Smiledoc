@@ -166,7 +166,7 @@ Feedback negativo → Contatto paziente (24h) → Ascolto → Risoluzione → Fo
 
 ### Template Risposta Recensione Negativa
 
-> "Gentile [Nome], ci dispiace leggere della sua esperienza. La soddisfazione dei nostri pazienti è la nostra priorità. La invitiamo a contattarci al [telefono] per permetterci di capire cosa è successo e come possiamo rimediare. Cordiali saluti, Lo Staff dello Studio Smiledoc"
+> "Gentile [Nome], ci dispiace leggere della sua esperienza. La soddisfazione dei nostri pazienti è la nostra priorità. La invitiamo a contattarci al [telefono] per permetterci di capire cosa è successo e come possiamo rimediare. Cordiali saluti, Lo Staff dello {{ clinic.full_name }}"
 
 ## Azioni di Miglioramento
 

@@ -1,6 +1,6 @@
-site_name: Manuale Smiledoc
+site_name: Manuale {{ clinic.name }}
 site_url: https://manuale-smiledoc.geniusmile.com
-site_description: Manuale operativo per la gestione delle cliniche Smiledoc
+site_description: Manuale operativo per la gestione delle cliniche {{ clinic.name }}
 
 theme:
   name: material
@@ -231,4 +231,4 @@ extra_css:
 extra_javascript:
   - assets/javascripts/feedback.js
 
-copyright: "&copy; 2026 Smiledoc S.r.l. - Tutti i diritti riservati"
+copyright: "&copy; 2026 {{ clinic.legal_name }} - Tutti i diritti riservati"
