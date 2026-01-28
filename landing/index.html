@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuale Operativo Digitale per Cliniche Dentali | Geniusmile</title>
+    <meta name="description" content="Il manuale operativo digitale con validità legale per la tua clinica dentale. Conforme ISO 9001, sistema documentale certificato, HR integrato. Prova gratis 14 giorni.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Manuale Operativo Digitale per Cliniche Dentali">
+    <meta property="og:description" content="Digitalizza le procedure del tuo studio dentistico con validità legale ISO 9001. Prova gratis 14 giorni.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manuale.geniusmile.com">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 50: '#e0f7fa', 100: '#b2ebf2', 200: '#80deea', 300: '#4dd0e1', 400: '#26c6da', 500: '#00bcd4', 600: '#00acc1', 700: '#0097a7', 800: '#00838f', 900: '#006064' },
+                        accent: { 500: '#00e5ff' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="font-['Inter'] text-gray-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-primary-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2v-2zm1-10c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+                    <span class="text-xl font-bold text-gray-900">Manuale<span class="text-primary-500">Clinic</span></span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-sm text-gray-600 hover:text-primary-600 transition">Funzionalità</a>
+                    <a href="#come-funziona" class="text-sm text-gray-600 hover:text-primary-600 transition">Come Funziona</a>
+                    <a href="#prezzi" class="text-sm text-gray-600 hover:text-primary-600 transition">Prezzi</a>
+                    <a href="#faq" class="text-sm text-gray-600 hover:text-primary-600 transition">FAQ</a>
+                    <a href="#registrati" class="bg-primary-500 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-primary-600 transition shadow-md shadow-primary-500/20">Prova Gratis</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3">
+            <a href="#features" class="block text-gray-600">Funzionalità</a>
+            <a href="#come-funziona" class="block text-gray-600">Come Funziona</a>
+            <a href="#prezzi" class="block text-gray-600">Prezzi</a>
+            <a href="#faq" class="block text-gray-600">FAQ</a>
+            <a href="#registrati" class="block bg-primary-500 text-white px-4 py-2 rounded-lg text-center font-medium">Prova Gratis</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-20 bg-gradient-to-br from-primary-50 via-white to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    Conforme ISO 9001:2015
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Il Manuale Operativo<br>
+                    <span class="text-primary-500">Digitale</span> per la tua Clinica
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+                    Procedure, protocolli, checklist e consensi informati sempre aggiornati e a norma di legge. Il sistema documentale con <strong>validità legale</strong> che ogni studio dentistico dovrebbe avere.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#registrati" class="bg-primary-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-600 transition shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 hover:-translate-y-0.5">
+                        Prova Gratis 14 Giorni
+                    </a>
+                    <a href="#come-funziona" class="bg-white text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition border border-gray-200 shadow-sm">
+                        Scopri Come Funziona
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400 mt-4">Nessuna carta di credito richiesta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema/Soluzione -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Il problema che ogni clinica conosce</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <p class="text-gray-600">Procedure su fogli Word sparsi in cartelle dimenticate</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <p class="text-gray-600">Nessuna tracciabilità delle modifiche ai protocolli</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <p class="text-gray-600">Personale nuovo senza guida strutturata per l'onboarding</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            <p class="text-gray-600">Rischio sanzioni alle ispezioni ASL per documentazione incompleta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-primary-50 to-cyan-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">La soluzione: tutto in un unico posto</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700">Tutte le procedure accessibili da qualsiasi dispositivo</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700">Ogni modifica tracciata con hash crittografico e registro revisioni</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700">Onboarding guidato per ogni ruolo: segretaria, ASO, igienista</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700">Sempre pronto per ispezioni con firma digitale di presa visione</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Tutto quello che serve al tuo studio</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Un ecosistema completo per gestire procedure, protocolli e personale con validità legale certificata.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Sistema Documentale Certificato</h3>
+                    <p class="text-gray-600">Conforme ISO 9001:2015 con registro documenti, registro revisioni, hash di integrità e dichiarazione di conformità.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Checklist Operative</h3>
+                    <p class="text-gray-600">Apertura e chiusura studio, preparazione riunito, controlli settimanali e mensili. Mai più passaggi dimenticati.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Sistema HR Integrato</h3>
+                    <p class="text-gray-600">Onboarding strutturato, mansionari per ruolo, formazione obbligatoria, valutazione obiettivi e gestione documenti dipendenti.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Protocolli Clinici</h3>
+                    <p class="text-gray-600">Sterilizzazione, radiologia, emergenze mediche, gestione rifiuti, radioprotezione. Tutto documentato e conforme alla normativa.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Consensi Informati</h3>
+                    <p class="text-gray-600">Modelli completi per chirurgia, implantologia, ortodonzia, endodonzia, sbiancamento e minori. Personalizzabili con i dati dello studio.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Feedback dello Staff</h3>
+                    <p class="text-gray-600">Il personale può suggerire correzioni e miglioramenti direttamente dal manuale. Sistema di gestione feedback con priorità e stati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Come Funziona -->
+    <section id="come-funziona" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Operativo in 3 semplici passi</h2>
+                <p class="text-lg text-gray-600">Dalla registrazione al manuale pronto: tutto automatizzato.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-500 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-primary-500/30">1</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Registrati</h3>
+                    <p class="text-gray-600">Crea il tuo account in 30 secondi. Inserisci i dati della clinica e inizia il trial gratuito di 14 giorni.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-500 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-primary-500/30">2</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Personalizza</h3>
+                    <p class="text-gray-600">Il manuale viene generato automaticamente con i dati del tuo studio: nome, indirizzo, contatti, direttore sanitario.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-500 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-primary-500/30">3</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Usa</h3>
+                    <p class="text-gray-600">Accedi al tuo manuale personalizzato da browser, tablet o smartphone. Il tuo team può consultarlo ovunque e in qualsiasi momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="prezzi" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Piani semplici e trasparenti</h2>
+                <p class="text-lg text-gray-600 mb-8">Scegli il piano adatto alla tua clinica. Tutti includono 14 giorni di prova gratuita.</p>
+                <!-- Toggle Mensile/Annuale -->
+                <div class="inline-flex items-center gap-3 bg-white rounded-full p-1 border border-gray-200">
+                    <button id="toggle-monthly" class="px-5 py-2 rounded-full text-sm font-medium bg-primary-500 text-white transition">Mensile</button>
+                    <button id="toggle-yearly" class="px-5 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-gray-900 transition">Annuale <span class="text-primary-500 text-xs font-bold">-17%</span></button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Base -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:border-primary-200 hover:shadow-md transition">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Base</h3>
+                    <p class="text-sm text-gray-500 mb-6">Per lo studio singolo che vuole digitalizzarsi</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-gray-900 price-monthly">49</span>
+                        <span class="text-4xl font-extrabold text-gray-900 price-yearly hidden">41</span>
+                        <span class="text-gray-500">/mese</span>
+                        <p class="text-sm text-gray-400 mt-1 price-yearly-note hidden">Fatturato annualmente (490/anno)</p>
+                    </div>
+                    <a href="#registrati" class="block w-full bg-white text-primary-600 border-2 border-primary-500 px-6 py-3 rounded-xl text-center font-semibold hover:bg-primary-50 transition mb-6" data-plan="manuale_base">
+                        Inizia la Prova Gratuita
+                    </a>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>1 sede</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Fino a 3 utenti</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Manuale operativo completo</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Checklist operative</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Consensi informati</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Protocolli standard</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Sistema documentale</li>
+                    </ul>
+                </div>
+
+                <!-- Pro (Consigliato) -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-500 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-500 text-white text-sm font-semibold px-4 py-1 rounded-full">Consigliato</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Pro</h3>
+                    <p class="text-sm text-gray-500 mb-6">Per la clinica che vuole eccellere in qualità</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-gray-900 price-monthly">99</span>
+                        <span class="text-4xl font-extrabold text-gray-900 price-yearly hidden">83</span>
+                        <span class="text-gray-500">/mese</span>
+                        <p class="text-sm text-gray-400 mt-1 price-yearly-note hidden">Fatturato annualmente (990/anno)</p>
+                    </div>
+                    <a href="#registrati" class="block w-full bg-primary-500 text-white px-6 py-3 rounded-xl text-center font-semibold hover:bg-primary-600 transition shadow-md shadow-primary-500/20 mb-6" data-plan="manuale_pro">
+                        Inizia la Prova Gratuita
+                    </a>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>1 sede</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Fino a 10 utenti</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Tutto del piano Base, più:</strong></li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Sistema HR integrato</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Feedback e contributi staff</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Audit ISO 9001</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Presa visione digitale</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Report e statistiche</li>
+                    </ul>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:border-primary-200 hover:shadow-md transition">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Enterprise</h3>
+                    <p class="text-sm text-gray-500 mb-6">Per catene di cliniche e gruppi multi-sede</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-gray-900 price-monthly">199</span>
+                        <span class="text-4xl font-extrabold text-gray-900 price-yearly hidden">166</span>
+                        <span class="text-gray-500">/mese</span>
+                        <p class="text-sm text-gray-400 mt-1 price-yearly-note hidden">Fatturato annualmente (1990/anno)</p>
+                    </div>
+                    <a href="#registrati" class="block w-full bg-white text-primary-600 border-2 border-primary-500 px-6 py-3 rounded-xl text-center font-semibold hover:bg-primary-50 transition mb-6" data-plan="manuale_enterprise">
+                        Contattaci
+                    </a>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Sedi illimitate</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Utenti illimitati</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Tutto del piano Pro, più:</strong></li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>White-label (il tuo brand)</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Gestione multi-sede centralizzata</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Accesso API</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Supporto prioritario</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Personalizzazioni su misura</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">Già utilizzato da cliniche reali</h2>
+            <div class="bg-gradient-to-br from-primary-50 to-cyan-50 rounded-2xl p-8 md:p-12">
+                <blockquote class="text-lg md:text-xl text-gray-700 italic leading-relaxed mb-6">
+                    "Avevamo procedure su fogli Word sparsi ovunque. Dopo un'ispezione ASL ci siamo resi conto che serviva un sistema serio. Con il manuale digitale abbiamo tutto in ordine, tracciabile e sempre aggiornato. Il personale nuovo si forma in metà del tempo."
+                </blockquote>
+                <div class="flex items-center justify-center gap-4">
+                    <div class="w-12 h-12 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold text-lg">PC</div>
+                    <div class="text-left">
+                        <p class="font-semibold text-gray-900">Dott. Piernatale Civero</p>
+                        <p class="text-sm text-gray-500">Direttore Sanitario, Smiledoc - Monterotondo (RM)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-8 mt-12">
+                <div>
+                    <p class="text-3xl font-bold text-primary-500">200+</p>
+                    <p class="text-sm text-gray-500 mt-1">Procedure documentate</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-primary-500">50+</p>
+                    <p class="text-sm text-gray-500 mt-1">Moduli e consensi</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-primary-500">100%</p>
+                    <p class="text-sm text-gray-500 mt-1">Compliance normativa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Domande Frequenti</h2>
+            <div class="space-y-4">
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-medium text-gray-900 hover:bg-gray-50">
+                        Cosa include il trial gratuito di 14 giorni?
+                        <svg class="w-5 h-5 text-gray-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="px-6 pb-6 text-gray-600">Il trial include tutte le funzionalità del piano Pro per 14 giorni completi. Non serve carta di credito. Alla scadenza puoi scegliere il piano più adatto o il manuale resta accessibile in sola lettura.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-medium text-gray-900 hover:bg-gray-50">
+                        Posso personalizzare i contenuti del manuale?
+                        <svg class="w-5 h-5 text-gray-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="px-6 pb-6 text-gray-600">Il manuale viene generato automaticamente con i dati della tua clinica (nome, indirizzo, contatti, direttore sanitario). I contenuti standard come protocolli di sterilizzazione e consensi informati sono pre-compilati e conformi alla normativa vigente. Il team dello staff può proporre modifiche tramite il sistema di feedback integrato.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-medium text-gray-900 hover:bg-gray-50">
+                        Il manuale ha davvero validità legale?
+                        <svg class="w-5 h-5 text-gray-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="px-6 pb-6 text-gray-600">Il sistema documentale è progettato conformemente alla norma ISO 9001:2015. Ogni documento ha un hash crittografico di integrità, un registro di revisioni con tracciabilità completa, e un sistema di presa visione con firma digitale. Il registro delle prese visione è utilizzabile come prova documentale.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-medium text-gray-900 hover:bg-gray-50">
+                        Come funziona il pagamento?
+                        <svg class="w-5 h-5 text-gray-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="px-6 pb-6 text-gray-600">I pagamenti sono gestiti in sicurezza tramite Stripe. Puoi pagare con carta di credito o debito. L'abbonamento si rinnova automaticamente e puoi cancellarlo in qualsiasi momento. Emettiamo fattura elettronica per ogni pagamento.</p>
+                </details>
+                <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-medium text-gray-900 hover:bg-gray-50">
+                        Posso cambiare piano in qualsiasi momento?
+                        <svg class="w-5 h-5 text-gray-400 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="px-6 pb-6 text-gray-600">Puoi fare upgrade o downgrade in qualsiasi momento. Il cambio di piano è immediato e viene calcolato il prorata per il periodo rimanente.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Registration -->
+    <section id="registrati" class="py-20 bg-gradient-to-br from-primary-500 to-primary-700">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Inizia subito, gratis per 14 giorni</h2>
+            <p class="text-primary-100 text-lg mb-8">Nessuna carta di credito richiesta. Configura il tuo manuale in meno di 2 minuti.</p>
+
+            <form id="register-form" class="bg-white rounded-2xl p-8 shadow-2xl text-left">
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nome della clinica *</label>
+                        <input type="text" name="clinic_name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition" placeholder="Studio Dentistico Roma">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nome e Cognome *</label>
+                        <input type="text" name="owner_name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition" placeholder="Dott. Mario Rossi">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition" placeholder="info@tuaclinica.it">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Telefono</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition" placeholder="06 1234567">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Indirizzo della clinica</label>
+                    <input type="text" name="address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition" placeholder="Via Roma 1, 00100 Roma (RM)">
+                </div>
+                <!-- Honeypot -->
+                <div class="hidden" aria-hidden="true">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <div class="mb-6">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" required class="mt-1 rounded border-gray-300 text-primary-500 focus:ring-primary-500">
+                        <span class="text-sm text-gray-500">Accetto i <a href="#" class="text-primary-500 underline">termini di servizio</a> e la <a href="#" class="text-primary-500 underline">privacy policy</a></span>
+                    </label>
+                </div>
+                <button type="submit" id="register-btn" class="w-full bg-primary-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-600 transition shadow-lg shadow-primary-500/30">
+                    Crea il tuo Manuale Gratuito
+                </button>
+                <p class="text-center text-sm text-gray-400 mt-3">14 giorni gratis, poi a partire da 49/mese</p>
+            </form>
+
+            <div id="register-success" class="hidden bg-white rounded-2xl p-8 shadow-2xl text-center">
+                <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Registrazione completata!</h3>
+                <p class="text-gray-600 mb-6">Stiamo preparando il tuo manuale personalizzato. Riceverai un'email con le credenziali di accesso.</p>
+                <div class="bg-primary-50 rounded-xl p-4">
+                    <p class="text-sm text-primary-700 font-medium">Il tuo manuale sarà pronto tra pochi minuti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-xl font-bold text-white">Manuale<span class="text-primary-400">Clinic</span></span>
+                    <p class="mt-3 text-sm">Il manuale operativo digitale con validità legale per cliniche dentali.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Prodotto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white transition">Funzionalità</a></li>
+                        <li><a href="#prezzi" class="hover:text-white transition">Prezzi</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Legale</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Termini di Servizio</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Contatti</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>info@geniusmile.com</li>
+                        <li>Geniusmile S.r.l.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2026 Geniusmile S.r.l. - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
